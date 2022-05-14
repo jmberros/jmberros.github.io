@@ -19,13 +19,26 @@
 
   {% include contact.html %}
 
+  <div style="padding-left: 30px">
+    <a href="https://en.wikipedia.org/wiki/Glider_(Conway%27s_Life)" target="_blank">
+      <img class="conway" src="{{ site.baseurl }}/assets/images/life-1.gif" alt="conways-life" />
+    </a>
+  </div>
+
   {% if sidebar.education %}
     {% include education.html %}
   {% endif %}
 
+  <!-- 
+  <div style="padding-left: 30px">
+    <img class="conway" src="{{ site.baseurl }}/assets/images/life-2.gif" alt="conways-life" />
+  </div>
+  -->
+
+  {% include experiences.html %}
+
   {% include language.html %}
   {% include interests.html %}
-  {% include experiences.html %}
 
   {% if sidebar.about %}
     {% include about.html %}
