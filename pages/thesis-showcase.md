@@ -107,6 +107,8 @@ We analyzed the BAF statistic under different levels of DNA mixture (or
   <img src="/images/thesis-showcase/mother-dna-contamination.png" width="70%">
 
   <div class="caption">
+  Patterns of BAF under different levels of mother-embryo DNA mixture.
+  In colors the possible genotype combinations.
   </div>
 </div>
 
