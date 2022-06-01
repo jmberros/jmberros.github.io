@@ -213,3 +213,7 @@ some diseases.
   </div>
 </div>
 
+
+<div style="text-align: center;">
+  <img src="/images/ornament.png" width="40px" />
+</div>
