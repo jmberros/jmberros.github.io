@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+<loc>http://localhost:4000/pages/bio-for-toptal/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/pages/edu-work/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/index_old/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/pages/other-work/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/pages/thesis-showcase/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/downloads/CV-Juan-Manuel-Berros.pdf</loc>
+<lastmod>2022-06-01T13:01:10-03:00</lastmod>
+</url>
+</urlset>

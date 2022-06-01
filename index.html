@@ -2,15 +2,13 @@
 layout: default
 ---
 
-{% include bio.html %}
+<div id="main">
+  <h1>Juan Manuel Berros ~ Personal page</h1>
 
-{% comment %}
-  {% include career-profile.html %}
-  {% unless site.data.data.sidebar.education %}
-    {% include education.html %}
-  {% endunless %}
-  {% include experiences.html %}
-  {% include projects.html %}
-  {% include publications.html %}
-  {% include skills.html %}
-{% endcomment %}
+  <p>
+    Please navigate to one of the following:
+  </p>
+
+  {% include site-links.html %}
+
+</div>

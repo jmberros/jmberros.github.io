@@ -1,70 +1,58 @@
-<a href="https://jekyll-themes.com">
-<img src="https://img.shields.io/badge/featured%20on-JT-red.svg" height="20" alt="Jekyll Themes Shield" >
-</a>
+# Strata Reloaded
 
-# Orbit
-> This theme is designed by Xiaoying Riley at [3rd Wave Media](http://themes.3rdwavemedia.com/).
-> Visit her [website](http://themes.3rdwavemedia.com/) for more themes.
+Simple, clean personal blogging template for Jekyll based on Strata by HTML5 UP.
 
-I have made this into a Jekyll Theme. Checkout the live demo [here](https://online-cv.webjeda.com).
+![Strata Reloaded template screenshot](images/_screenshot.png)
 
-<table>
-  <tr>
-    <th>Desktop</th>
-    <th>Mobile</th>
-  </tr>
-  <tr>
-    <td>
-        <img src="https://online-cv.webjeda.com/assets/images/desktop.png?raw=true" width="600"/>
-    </td>
-    <td>
-        <img src="https://online-cv.webjeda.com/assets/images/mobile.png?raw=true" width="250"/>
-    </td>
-  </tr>
-</table>
+## Features
 
-## Installation
+* Parallax background effect
+* Lightbox gallery
+* Pre-styled components
+* Blog with pagination
+* Configurable footer
+* Optimized for editing in [CloudCannon](http://cloudcannon.com/)
+* RSS/Atom feed
+* SEO tags
+* Google Analytics
+* Webmaster Verification
 
-* [Fork](https://github.com/sharu725/online-cv/fork) the repository
-* Delete the `gh-pages` branch
-* Re-create the `gh-pages` branch
-* Go to settings and set Github Pages source as master.
-* Your new site should be ready at `https://username.github.io/online-cv/`
+## Develop
 
-Change all the details from one place: ``_data/data.yml``
+1. Add your site and author details in `_config.yml`.
+2. Add your Google Analytics key to `_config.yml`.
+3. Get a workflow going to see your site's output (with [CloudCannon](https://app.cloudcannon.com/) or Jekyll locally).
 
-Watch my [video](https://www.youtube.com/embed/T2nx6tj-ZH4) on installation.
+## Develop
 
-## To preview/edit localy with docker
+Urban was built with [Jekyll](http://jekyllrb.com/) version 3.3.1, but should support newer versions as well.
 
-```sh
-docker-compose up
-```
+Install the dependencies with [Bundler](http://bundler.io/):
 
-*docker-compose.yml* file is used to create a container that is reachable under http://localhost:4000.
-Changes *_data/data.yml* will be visible after a while.
+~~~bash
+$ bundle install
+~~~
 
-## Skins
+Run `jekyll` commands through Bundler to ensure you're using the right versions:
 
-There are 6 color schemes available:
+~~~bash
+$ bundle exec jekyll serve
+~~~
 
-| Blue | Turquoise | Green |
-|---------|---------|---------|
-| <img src="https://online-cv.webjeda.com/assets/images/blue.jpg" width="300"/> | <img src="https://online-cv.webjeda.com/assets/images/turquoise.jpg" width="300"/> | <img src="https://online-cv.webjeda.com/assets/images/green.jpg" width="300"/> |
+## Editing
 
-| Berry | Orange | Ceramic |
-|---------|---------|---------|
-| <img src="https://online-cv.webjeda.com/assets/images/berry.jpg" width="300"/> | <img src="https://online-cv.webjeda.com/assets/images/orange.jpg" width="300"/> | <img src="https://online-cv.webjeda.com/assets/images/ceramic.jpg" width="300"/> |
+Strata Reloaded is already optimized for adding, updating and removing posts and footer elements in [CloudCannon](https://app.cloudcannon.com/).
 
-## Credits
+### Posts
 
-Thanks to [Nelson Estevão](https://github.com/nelsonmestevao) for all the [contributions](https://github.com/sharu725/online-cv/commits?author=nelsonmestevao).
+* Add, update or remove a post in the *Posts* collection.
+* Change the defaults when new posts are created in `_posts/_defaults.md`.
 
-Thanks to [t-h-e(sfrost)](https://github.com/t-h-e) for all the [contributions](https://github.com/sharu725/online-cv/commits?author=t-h-e).
+### Footer
 
-Check out for more themes: [**Jekyll Themes**](http://jekyll-themes.com).
+* Exposed as a data file to give clients better access.
+* Set in the *Data* / *Footer* section.
 
-## Star History
+## License
 
-[![Star History Chart](https://api.star-history.com/svg?repos=sharu725/online-cv&type=Date)](https://star-history.com/#sharu725/online-cv&Date)
-
+Free for personal and commercial use under the CCA 3.0 license. See LICENSE file for additional information and terms of use. This theme was adapted from Strata by HTML5 UP for use with [CloudCannon](http://cloudcannon.com) by [Comfusion LLC](http://comfusionllc.com).

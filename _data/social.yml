@@ -1,0 +1,8 @@
+- name: LinkedIn
+  link: 'https://linkedin.com/in/jmberros'
+  social_icon: Linkedin
+  new_window: true
+- name: Github
+  link: 'https://github.com/jmberros'
+  social_icon: Github
+  new_window: true

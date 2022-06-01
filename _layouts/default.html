@@ -1,25 +1,88 @@
----
-#Add "layout: compress" here to compress the html code
----
 <!DOCTYPE html>
-<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
-<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
-<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
-{% include head.html %}
+<html>
+	<head>
+		<title>{{ site.title }}</title>
+		<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="author" content="{{ site.author.name }}">
+		<meta name="description" content="{{ site.description }}">
+		<meta http-equiv="content-language" content="{{ site.locale }}" />
+		<meta name="generator" content="Jekyll v{{ jekyll.version }}">
 
-<body>
-  <div class="wrapper">
-    {% include sidebar.html %}
+		<!--[if lte IE 8]><script src="/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" type="text/css">
+		<link rel="stylesheet" href="/css/strata-styles.css">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+		<!--[if lte IE 8]><link rel="stylesheet" href="/css/ie8.css" /><![endif]-->
 
-    <div class="main-wrapper">
-        {{ content }}
-    </div>
-  </div>
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="/touch-icon.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="/images/favicon.png">
 
-  {% include footer.html %}
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [['$','$'], ['\\(','\\)']],
+          processEscapes: true
+        }
+      });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 
-{% include scripts.html %}
-</body>
+    {% seo %}
+    {% feed_meta %}
 
+	</head>
+
+	<body id="top">
+    <header id="header">
+
+      <a href="{{ site.url }}" class="image avatar">
+        <img class="editable" src="/images/juan-avatar.png" alt="{{ site.author.name }}">
+      </a>
+
+      <h1><strong>Juan Manuel Berros</strong></h1>
+      <p class="sub-avatar-tag">
+        Developer | Data Analyst | Bioinformatician
+      </p>
+
+      {% include site-links.html %}
+
+      <img alt="The glider" src="/images/life-1.gif" class="life-gif"></img>
+
+    </header>
+
+    {{ content }}
+
+    <footer id="footer">
+      <p class="editor-link"><a href="cloudcannon:collections/_data/social.yml" class="button"><strong>&#9998;</strong> Update Social Icons</a></p>
+      <ul class="icons">
+        {% for account in site.data.social %}
+					<li>
+						<a {% if account.new_window %}target="_blank"{% endif %} href="{% include relative-src.html src=account.link %}" {% if account.social_icon %}class="icon fa-{{ account.social_icon | slugify }}"{% endif %}>
+              <span class="label">{{ account.name }}</span>
+						</a>
+					</li>
+				{% endfor %}
+        {% if site.author.email %}
+        <li>
+          <a href="mailto:{{ site.author.email }}" class="icon fa-envelope-o">
+            <span class="label">Email</span>
+          </a>
+        </li>
+        {% endif %}
+      </ul>
+      <ul class="copyright">
+        <li><a href="http://html5up.net">HTML5 UP</a></li>
+        <li><a href="https://github.com/old-jekyll-templates/Strata-Jekyll-Theme">Strata for Jekyll</a></li>
+      </ul>
+    </footer>
+
+		<script src="/js/jquery.min.js"></script>
+		<script src="/js/jquery.poptrox.min.js"></script>
+		<script src="/js/skel.min.js"></script>
+		<script src="/js/util.js"></script>
+		<!--[if lte IE 8]><script src="/js/ie/respond.min.js"></script><![endif]-->
+		<script src="/js/main.js"></script>
+	</body>
 </html>
-
