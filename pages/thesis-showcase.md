@@ -30,7 +30,7 @@ percentages of mutated cells in a sample.
 We described the expected behavior of a single measure $\theta$ that helped
 designing statistical tests to easily detect these disorders.
 
-## Simulation genetic data with different degrees of mosaicism
+## Simulation of genetic data with different degrees of mosaicism
 
 We simulated genetic data for different levels mosaicism, based on the
 theoretical framework developed for the thesis.
