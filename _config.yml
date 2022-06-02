@@ -1,6 +1,6 @@
 locale: "en-US"
 title: Juan Manuel Berros
-url: "http://jmberros.com" # the base hostname & protocol for your site
+url: "https://jmberros.me" # the base hostname & protocol for your site
 baseurl: "" # the subpath of your site, e.g. /blog/
 google_analytics_key: ""
 
