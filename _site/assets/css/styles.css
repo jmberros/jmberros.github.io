@@ -3,6 +3,9 @@
   .small-banner img {
     max-width: 300px; }
 
+.warning-text {
+  color: Crimson; }
+
 .life-gif {
   width: 50px;
   opacity: 0.5;

@@ -18,9 +18,9 @@ This _in house_ software has saved the laboratory thousands of dollars in
 LIMS (Laboratory Information Management Software).
 
 IMPORTANT NOTE: All the patient, doctor and clinic names in the screenshots
-have been replaced with **fake names** from the Ruby gem
+have been <span class="warning-text">anonymised with fake names</span> from the Ruby gem
 [Faker](https://github.com/faker-ruby/faker) for the purposes of this showcase.
-Sensitive data has also been blurred in the screenshots.
+<span class="warning-text">Sensitive data has also been blurred</span> in the screenshots.
 
 ### Interactive customization of PDF reports
 
