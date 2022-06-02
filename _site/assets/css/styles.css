@@ -15,19 +15,26 @@
   font-size: 11pt;
   color: #CCCCCC; }
 
-.thesis-plot {
+.showcase-img {
   text-align: center;
+  margin-top: 40px;
   margin-bottom: 40px; }
-  .thesis-plot img {
+  .showcase-img img {
     max-width: 100%; }
+  .showcase-img .with-border {
+    border: 1px solid #444444;
+    border-radius: 5px; }
 
 .caption {
   margin-left: auto;
   margin-right: auto;
   position: relative;
   width: 500px;
-  top: -5px;
   font-size: 0.9em;
   text-align: justify;
   padding-right: 10px;
   line-height: 1; }
+
+.ornament {
+  text-align: center;
+  opacity: 0.5; }

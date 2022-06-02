@@ -44,7 +44,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Thesis showcase" />
 <script type="application/ld+json">
-{"@type":"WebPage","url":"http://localhost:4000/pages/thesis-showcase/","headline":"Thesis showcase","author":{"@type":"Person","name":"Juan Manuel Berros"},"description":"Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.","@context":"https://schema.org"}</script>
+{"description":"Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.","url":"http://localhost:4000/pages/thesis-showcase/","headline":"Thesis showcase","@type":"WebPage","author":{"@type":"Person","name":"Juan Manuel Berros"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
     <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Juan Manuel Berros" />
@@ -63,41 +63,6 @@
         Developer | Data Analyst | Bioinformatician
       </p>
 
-      <div class="sidebar-links">
-  <a href="/pages/bio-for-toptal/">
-    Cover Letter for TopTal
-  </a>
-
-  <br>
-
-  <a href="/pages/thesis-showcase/">
-    Portfolio: Thesis Showcase
-  </a>
-
-  <br>
-
-  <!--
-  <a href="/pages/other-work">
-    Portfolio: other work
-  </a>
-
-  <br/>
-
-  <a href="/pages/edu-work">
-    Education and Work Experience
-  </a>
-
-  <br/>
-  -->
-
-  <a href="/downloads/CV-Juan-Manuel-Berros.pdf" target="_blank">
-    PDF Curriculum
-  </a>
-</div>
-
-
-      <img alt="The glider" src="/images/life-1.gif" class="life-gif">
-
     </header>
 
     <div id="main">
@@ -111,7 +76,7 @@
       <p>This thesis was presented in the Faculty of Exact and Natural Sciences of the
 University of Buenos Aires (UBA) in 2022. It’s a Bioinformatics and
 Biostatistics analysis of several kinds of genetic scores associated to
-disease, mainly utilised for embryos during <em>in vitro</em> fertilization.</p>
+disease, mainly utilised to diagnose embryos during <em>in vitro</em> fertilization.</p>
 
 <p>Some results and figures are showcased here.</p>
 
@@ -121,7 +86,7 @@ disease, mainly utilised for embryos during <em>in vitro</em> fertilization.</p>
 under different disorders and levels of mosaicism, which means different
 percentages of mutated cells in a sample.</p>
 
-<div class="thesis-plot">
+<div class="showcase-img">
   <img src="/images/thesis-showcase/monosomy-densities.png" width="60%">
   <img src="/images/thesis-showcase/trisomy-densities.png" width="60%">
 
@@ -140,7 +105,7 @@ designing statistical tests to easily detect these disorders.</p>
 <p>We simulated genetic data for different levels mosaicism, based on the
 theoretical framework developed for the thesis.</p>
 
-<div class="thesis-plot">
+<div class="showcase-img">
   <img src="/images/thesis-showcase/monosomy-simu.png" width="80%">
   <img src="/images/thesis-showcase/trisomy-simu.png" width="80%">
 
@@ -157,7 +122,7 @@ theoretical framework developed for the thesis.</p>
 leveraging on a robust measure of dispersion called median absolute deviation
 (MAD).</p>
 
-<div class="thesis-plot">
+<div class="showcase-img">
   <img src="/images/thesis-showcase/gMAD-performance.png" width="70%">
   <br>
   <img src="/images/thesis-showcase/T3-empirical-percentiles.png" width="70%">
@@ -177,7 +142,7 @@ leveraging on a robust measure of dispersion called median absolute deviation
 for genetic disorders that span few megabases in a chromosome (that means,
 mutations that span a relatively small region).</p>
 
-<div class="thesis-plot">
+<div class="showcase-img">
   <img src="/images/thesis-showcase/windows-overlap.png" width="70%">
 
   <div class="caption">
@@ -193,7 +158,7 @@ mutations that span a relatively small region).</p>
 <p>We evaluated the performance of a new estimator of the level of mosaicism
 with simulated embryo samples.</p>
 
-<div class="thesis-plot">
+<div class="showcase-img">
   <img src="/images/thesis-showcase/estimators-performance.png" width="80%">
 
   <div class="caption">
@@ -208,7 +173,7 @@ with simulated embryo samples.</p>
 <p>We analyzed the BAF statistic under different levels of DNA mixture (or
 “contamination”) between mother and embryo.</p>
 
-<div class="thesis-plot">
+<div class="showcase-img">
   <img src="/images/thesis-showcase/mother-dna-contamination.png" width="70%">
 
   <div class="caption">
@@ -223,7 +188,7 @@ with simulated embryo samples.</p>
 with emphasis in the distribution of the size of the gaps with no data left by
 the panel.</p>
 
-<div class="thesis-plot">
+<div class="showcase-img">
   <img src="/images/thesis-showcase/panel-snps.png" width="70%">
 
   <div class="caption">
@@ -240,7 +205,7 @@ score computed from hundreds or thousands of mutations in the genome. We found
 several pairs of diseases, like rheumatoid arthritis and multiple sclerosis,
 with negatively correlated scores. An example is given in the figure below.</p>
 
-<div class="thesis-plot">
+<div class="showcase-img">
   <img src="/images/thesis-showcase/PRS-anticorrelation.png" width="80%">
 
   <div class="caption">
@@ -260,7 +225,7 @@ mutations. These captured-variance trajectories help quantify the degree of
 <strong>polygenicity</strong> of a given disease. Low polygenicity means that
 few mutations determine most of the risk.</p>
 
-<div class="thesis-plot">
+<div class="showcase-img">
   <img src="/images/thesis-showcase/variance-trajectories.png" width="70%">
 
   <div class="caption">
@@ -274,7 +239,7 @@ few mutations determine most of the risk.</p>
 <p>We found a surprising “natural” grouping of autoimmune diseases based on the
 correlation between their polygenic scores.</p>
 
-<div class="thesis-plot">
+<div class="showcase-img">
   <img src="/images/thesis-showcase/diseases-graph.png" width="50%">
 
   <div class="caption">
@@ -291,7 +256,7 @@ embryos based on their genetic scores. A potential problem was described where
 embryos with low genetic score of one disease might have increased risk of
 a correlated disease.</p>
 
-<div class="thesis-plot">
+<div class="showcase-img">
   <img src="/images/thesis-showcase/embryo-strategies.png" width="70%">
 
   <div class="caption">
@@ -311,17 +276,13 @@ diseases. This illustrates that between 250 and 1250 couples applying a
 PRS-based embryo selection might be enough to produce unwanted new cases of
 some diseases.</p>
 
-<div class="thesis-plot">
+<div class="showcase-img">
   <img src="/images/thesis-showcase/IRA-NNH.png" width="50%">
 
   <div class="caption">
   Relation between increase in absolute risk (IRA) and number needed to harm
   (NNH) for several pairs of diseases found to be anticorrelated in the thesis.
   </div>
-</div>
-
-<div style="text-align: center;">
-  <img src="/images/ornament.png" width="40px">
 </div>
 
     </section>
@@ -334,10 +295,51 @@ some diseases.</p>
       </div>
     </footer>
   </article>
+
+  <div class="ornament">
+  <img src="/images/ornament.png" width="40px">
+</div>
+
 </div>
 
 
     <footer id="footer">
+
+      <div class="sidebar-links">
+  <a href="/pages/bio-for-toptal/">
+    Cover Letter for TopTal
+  </a>
+
+  <br>
+
+  <a href="/pages/thesis-showcase/">
+    Portfolio: Thesis Showcase
+  </a>
+
+  <br>
+
+  <a href="/pages/lab-app">
+    Portfolio: Web App for a Medical Genomics Lab
+  </a>
+
+  <br>
+
+  <!--
+  <a href="/pages/edu-work">
+    Education and Work Experience
+  </a>
+
+  <br/>
+  -->
+
+  <a href="/downloads/CV-Juan-Manuel-Berros.pdf" target="_blank">
+    PDF Curriculum
+  </a>
+</div>
+
+
+      <img alt="The glider" src="/images/life-1.gif" class="life-gif">
+
       <p class="editor-link"><a href="cloudcannon:collections/_data/social.yml" class="button"><strong>✎</strong> Update Social Icons</a></p>
       <ul class="icons">
         

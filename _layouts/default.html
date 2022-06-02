@@ -46,15 +46,16 @@
         Developer | Data Analyst | Bioinformatician
       </p>
 
-      {% include site-links.html %}
-
-      <img alt="The glider" src="/images/life-1.gif" class="life-gif"></img>
-
     </header>
 
     {{ content }}
 
     <footer id="footer">
+
+      {% include site-links.html %}
+
+      <img alt="The glider" src="/images/life-1.gif" class="life-gif"></img>
+
       <p class="editor-link"><a href="cloudcannon:collections/_data/social.yml" class="button"><strong>&#9998;</strong> Update Social Icons</a></p>
       <ul class="icons">
         {% for account in site.data.social %}

@@ -2957,6 +2957,7 @@
 
 			#main {
 				margin: 0;
+        margin-bottom: 30px;
 				padding: 6em 4em;
 				width: 100%;
 			}

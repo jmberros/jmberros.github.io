@@ -6,7 +6,7 @@ layout: post
 This thesis was presented in the Faculty of Exact and Natural Sciences of the
 University of Buenos Aires (UBA) in 2022. It's a Bioinformatics and
 Biostatistics analysis of several kinds of genetic scores associated to
-disease, mainly utilised for embryos during <em>in vitro</em> fertilization.
+disease, mainly utilised to diagnose embryos during <em>in vitro</em> fertilization.
 
 Some results and figures are showcased here.
 
@@ -16,7 +16,7 @@ We described the expected distribution of a genetic data statistic called BAF
 under different disorders and levels of mosaicism, which means different
 percentages of mutated cells in a sample.
 
-<div class="thesis-plot">
+<div class="showcase-img">
   <img src="/images/thesis-showcase/monosomy-densities.png" width="60%">
   <img src="/images/thesis-showcase/trisomy-densities.png" width="60%">
 
@@ -35,7 +35,7 @@ designing statistical tests to easily detect these disorders.
 We simulated genetic data for different levels mosaicism, based on the
 theoretical framework developed for the thesis.
 
-<div class="thesis-plot">
+<div class="showcase-img">
   <img src="/images/thesis-showcase/monosomy-simu.png" width="80%">
   <img src="/images/thesis-showcase/trisomy-simu.png" width="80%">
 
@@ -52,7 +52,7 @@ We developed and described a new statistic to detect aneuploidies in embryos,
 leveraging on a robust measure of dispersion called median absolute deviation
 (MAD).
 
-<div class="thesis-plot">
+<div class="showcase-img">
   <img src="/images/thesis-showcase/gMAD-performance.png" width="70%">
   <br/>
   <img src="/images/thesis-showcase/T3-empirical-percentiles.png" width="70%">
@@ -72,7 +72,7 @@ We described a problem with non-overlapping windows of data when searching
 for genetic disorders that span few megabases in a chromosome (that means,
 mutations that span a relatively small region).
 
-<div class="thesis-plot">
+<div class="showcase-img">
   <img src="/images/thesis-showcase/windows-overlap.png" width="70%">
 
   <div class="caption">
@@ -88,7 +88,7 @@ mutations that span a relatively small region).
 We evaluated the performance of a new estimator of the level of mosaicism
 with simulated embryo samples.
 
-<div class="thesis-plot">
+<div class="showcase-img">
   <img src="/images/thesis-showcase/estimators-performance.png" width="80%">
 
   <div class="caption">
@@ -103,7 +103,7 @@ with simulated embryo samples.
 We analyzed the BAF statistic under different levels of DNA mixture (or
 "contamination") between mother and embryo.
 
-<div class="thesis-plot">
+<div class="showcase-img">
   <img src="/images/thesis-showcase/mother-dna-contamination.png" width="70%">
 
   <div class="caption">
@@ -118,7 +118,7 @@ We analyzed the distribution of "probes" or targets in a genomic panel,
 with emphasis in the distribution of the size of the gaps with no data left by
 the panel.
 
-<div class="thesis-plot">
+<div class="showcase-img">
   <img src="/images/thesis-showcase/panel-snps.png" width="70%">
 
   <div class="caption">
@@ -135,7 +135,7 @@ score computed from hundreds or thousands of mutations in the genome. We found
 several pairs of diseases, like rheumatoid arthritis and multiple sclerosis,
 with negatively correlated scores. An example is given in the figure below.
 
-<div class="thesis-plot">
+<div class="showcase-img">
   <img src="/images/thesis-showcase/PRS-anticorrelation.png" width="80%">
 
   <div class="caption">
@@ -155,7 +155,7 @@ mutations. These captured-variance trajectories help quantify the degree of
 <strong>polygenicity</strong> of a given disease. Low polygenicity means that
 few mutations determine most of the risk.
 
-<div class="thesis-plot">
+<div class="showcase-img">
   <img src="/images/thesis-showcase/variance-trajectories.png" width="70%">
 
   <div class="caption">
@@ -169,7 +169,7 @@ few mutations determine most of the risk.
 We found a surprising "natural" grouping of autoimmune diseases based on the
 correlation between their polygenic scores.
 
-<div class="thesis-plot">
+<div class="showcase-img">
   <img src="/images/thesis-showcase/diseases-graph.png" width="50%">
 
   <div class="caption">
@@ -186,7 +186,7 @@ embryos based on their genetic scores. A potential problem was described where
 embryos with low genetic score of one disease might have increased risk of
 a correlated disease.
 
-<div class="thesis-plot">
+<div class="showcase-img">
   <img src="/images/thesis-showcase/embryo-strategies.png" width="70%">
 
   <div class="caption">
@@ -206,16 +206,11 @@ diseases. This illustrates that between 250 and 1250 couples applying a
 PRS-based embryo selection might be enough to produce unwanted new cases of
 some diseases.
 
-<div class="thesis-plot">
+<div class="showcase-img">
   <img src="/images/thesis-showcase/IRA-NNH.png" width="50%">
 
   <div class="caption">
   Relation between increase in absolute risk (IRA) and number needed to harm
   (NNH) for several pairs of diseases found to be anticorrelated in the thesis.
   </div>
-</div>
-
-
-<div style="text-align: center;">
-  <img src="/images/ornament.png" width="40px" />
 </div>

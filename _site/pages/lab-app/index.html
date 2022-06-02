@@ -31,20 +31,20 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 
     <!-- Begin Jekyll SEO tag v2.7.1 -->
-<title>Page not found | Juan Manuel Berros</title>
+<title>Web App for Medical Genomics Laboratory | Juan Manuel Berros</title>
 <meta name="generator" content="Jekyll v3.9.0" />
-<meta property="og:title" content="Page not found" />
+<meta property="og:title" content="Web App for Medical Genomics Laboratory" />
 <meta name="author" content="Juan Manuel Berros" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description." />
 <meta property="og:description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description." />
-<link rel="canonical" href="http://localhost:4000/404/" />
-<meta property="og:url" content="http://localhost:4000/404/" />
+<link rel="canonical" href="http://localhost:4000/pages/lab-app/" />
+<meta property="og:url" content="http://localhost:4000/pages/lab-app/" />
 <meta property="og:site_name" content="Juan Manuel Berros" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Page not found" />
+<meta property="twitter:title" content="Web App for Medical Genomics Laboratory" />
 <script type="application/ld+json">
-{"description":"Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.","url":"http://localhost:4000/404/","headline":"Page not found","@type":"WebPage","author":{"@type":"Person","name":"Juan Manuel Berros"},"@context":"https://schema.org"}</script>
+{"description":"Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.","url":"http://localhost:4000/pages/lab-app/","headline":"Web App for Medical Genomics Laboratory","@type":"WebPage","author":{"@type":"Person","name":"Juan Manuel Berros"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
     <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Juan Manuel Berros" />
@@ -66,17 +66,116 @@
     </header>
 
     <div id="main">
-  <h1>Page not found</h1>
+  <article>
+    <header>
+      <h1 class="post-title">Web App for Medical Genomics Laboratory</h1>
+      <p class="post-meta"></p>
+    </header>
 
-  <p>Uh-oh, you seem to have taken a wrong turn! It looks like this was the result of either:</p>
+    <section>
+      <p>I developed from scratch and maintained during +6 years an internal web
+application based on <strong>Ruby on Rails</strong> for a medical genomics laboratory, while
+I completed my thesis on site.</p>
 
-  <ul>
-    <li>A mistyped URL, or a copy-and-paste mistakex</li>
-    <li>A broken link on a web pages or in an email</li>
-    <li>Moved or deleted content</li>
-  </ul>
+<p>The app serves as an <strong>online inventory</strong> of patients, clinics, doctors and DNA
+testing results, implements the
+<a href="https://en.wikipedia.org/wiki/Create,_read,_update_and_delete" target="_blank" rel="noopener noreferrer">CRUD</a>
+operations through a user-friendly interface, <strong>automates the data entry</strong> of
+forms and <strong>bulk-editions</strong> of different types of data, as well as the generation
+and <strong>interactive edition of PDF reports</strong> to communicate the results.</p>
 
-  <p>I suggest you head to my <a href="/">Home</a> page from here.</p>
+<p>This <em>in house</em> software has saved the laboratory thousands of dollars in
+LIMS (Laboratory Information Management Software).</p>
+
+<p>IMPORTANT NOTE: All the patient, doctor and clinic names in the screenshots
+have been replaced with <strong>fake names</strong> from the Ruby gem
+<a href="https://github.com/faker-ruby/faker" target="_blank" rel="noopener noreferrer">Faker</a> for the purposes of this showcase.
+Sensitive data has also been blurred in the screenshots.</p>
+
+<h3 id="interactive-customization-of-pdf-reports">Interactive customization of PDF reports</h3>
+
+<p>Interactive edition and generation of PDF reports based on database data with
+user customizations thorough an easily editable YAML (black textarea on the
+right).</p>
+
+<div class="showcase-img">
+  <img class="with-border" src="/images/lab-app/edit-PNC.png" width="100%">
+  <img class="with-border" src="/images/lab-app/edit-NGA.png" width="100%">
+</div>
+
+<h3 id="interactive-generation-of-stats-for-different-subsets-of-data">Interactive generation of stats for different subsets of data</h3>
+
+<p>jQuery-powered highly interactive generation of stats for internal reporting
+of the lab performance on different clinics, methods, periods, etc.</p>
+
+<div class="showcase-img">
+  <img class="with-border" src="/images/lab-app/stats.png" width="100%">
+</div>
+
+<h3 id="inventory-of-cases-samples-patients-dna-test-results-etc">Inventory of cases, samples, patients, DNA test results, etc.</h3>
+
+<p>Easy creation, edition, deletion of several types of entities related to the
+lab daily work.</p>
+
+<div class="showcase-img">
+  <img class="with-border" src="/images/lab-app/lab-cases-index.png" width="100%">
+</div>
+
+<p>Inline edition of DNA library details, based on jQuery.</p>
+
+<div class="showcase-img">
+  <img class="with-border" src="/images/lab-app/edit-library.png" width="100%">
+</div>
+
+<p>Billling index for sales people.</p>
+
+<div class="showcase-img">
+  <img class="with-border" src="/images/lab-app/billing-index.png" width="100%">
+</div>
+
+<p>Bulk-edition of cases.</p>
+
+<div class="showcase-img">
+  <img class="with-border" src="/images/lab-app/bulk-edit-cases.png" width="100%">
+</div>
+
+<h3 id="workflows-for-the-creation-of-cases-patients-and-samples">Workflows for the creation of cases, patients and samples</h3>
+
+<p>Beginning of a workflow with the creation of a new Case.</p>
+
+<div class="showcase-img">
+  <img class="with-border" src="/images/lab-app/workflow-1-new-case.png" width="80%">
+</div>
+
+<p>Creation of a new patient as continuation of the workflow.</p>
+
+<div class="showcase-img">
+  <img class="with-border" src="/images/lab-app/workflow-2-new-patient.png" width="80%">
+</div>
+
+<h3 id="user-edition-for-admins">User edition for admins</h3>
+
+<p>Edition of diferential access for types of users.</p>
+
+<div class="showcase-img">
+  <img class="with-border" src="/images/lab-app/users-edit.png" width="80%">
+</div>
+
+    </section>
+
+    <footer>
+      <div class="row">
+      
+
+      
+      </div>
+    </footer>
+  </article>
+
+  <div class="ornament">
+  <img src="/images/ornament.png" width="40px">
+</div>
+
 </div>
 
 

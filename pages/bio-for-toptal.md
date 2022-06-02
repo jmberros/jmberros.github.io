@@ -23,7 +23,3 @@ From his specialization in Mathematical Statistics, besides the traditional tool
 <strong>Before his BSc in Biology</strong>, he spent several years in the Philosophy and Literature Faculty of the University of Buenos Aires, both studying and researching with the aid of an undergrad scholarship. He eventually realized that he longed for the answers that only scientific knowledge can provide, so he switched to Biology and later Bioinformatics and Statistics. However, the learnings of those years in the Humanities have nourished in him a different way of looking at problems and challenges.
 
 <strong>In his free time</strong>, he cultivates an ever growing library of literature and philosophy classics. As of the writing of this post, his main interest in this domain lies in the French literature of the XVIIIth and XIXth centuries.
-
-<div style="text-align: center;">
-  <img src="/images/ornament.png" width="40px" />
-</div>
