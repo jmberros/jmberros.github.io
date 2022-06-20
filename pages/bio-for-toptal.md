@@ -3,7 +3,7 @@ title: Cover letter for TopTal
 layout: post
 ---
 
-<a href="https://www.toptal.com/data-analysis" target="_blank">Toptal Data Analysis page</a>
+<a href="https://www.toptal.com/resume/juan-manuel-berros" target="_blank">Juan's Profile at TopTal</a>
 
 Juan is a Python and Ruby programmer expert in data tidying, engineering, modeling and visualization, with 10 years of experience in software development and 5 years in academia. He holds a PhD in Bioinformatics and a specialization in Mathematical Statistics. He’s a passionate learner that enjoys staying on top of the latest technologies and developments of his fields of interest.
 
