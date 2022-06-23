@@ -4,6 +4,7 @@ layout: post
 ---
 
 ## Coronavirus mutations in Buenos Aires strains
+{: #sarscov2 }
 
 The laboratory where I worked was part of [Proyecto-PAIS](http://pais.qb.fcen.uba.ar/), a country-wide effort in Argentina to sequence and analyse SARS-Cov-2 DNA samples.
 

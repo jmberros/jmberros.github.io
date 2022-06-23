@@ -4,6 +4,17 @@
   img { max-width: 300px; }
 }
 
+.footer-links {
+  display: flex;
+  justify-content: flex-end;
+  align-content: center;
+  align-items: center;
+
+  ul {
+    margin: 0;
+  }
+}
+
 .warning-text {
   color: Crimson;
 }
@@ -13,8 +24,16 @@
   opacity: 0.5;
   border: 2px solid black;
   border-radius: 5px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin: 20px;
+
+  -moz-transition: opacity 0.2s ease-in-out;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  -ms-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+
+  &:hover {
+    opacity: 1;
+  }
 }
 
 .sub-avatar-tag {

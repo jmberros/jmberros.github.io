@@ -1,5 +1,5 @@
 ---
-title: Thesis showcase
+title: "Thesis: Analysis of Embryo Genetic Scores"
 layout: post
 ---
 

@@ -2506,7 +2506,8 @@
 	}
 
 		#footer .icons {
-			margin: 1em 0 0 0;
+      /* Commented by Juan to add flex to the footer, see main.scss */
+			/* margin: 1em 0 0 0; */
 		}
 
 			#footer .icons a {
