@@ -2467,7 +2467,12 @@
 		color: rgba(255, 255, 255, 0.5);
 		height: 100%;
 		left: 0;
-		padding: 8em 4em 0 0;
+    /* Modified by Juan to accomodate more items in the sidebar */
+    padding-top: 50px;
+		padding-right: 50px;
+		padding-bottom: 15px;
+		padding-left: 15px;
+		/* padding: 8em 4em 0 0; */
 		position: fixed;
 		text-align: right;
 		top: 0;
@@ -2499,7 +2504,10 @@
 	#footer {
 		bottom: 0;
 		left: 0;
-		padding: 0 4em 6em 0;
+    /* Modified by Juan to push the links to the bottom */
+    padding-right: 50px; /* This should be the same as #header padding-right */
+    padding-bottom: 20px;
+		/* padding: 0 4em 6em 0; */
 		position: fixed;
 		text-align: right;
 		width: 35%;
