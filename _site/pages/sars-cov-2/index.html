@@ -29,20 +29,20 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 
     <!-- Begin Jekyll SEO tag v2.7.1 -->
-<title>Other Projects | Juan Manuel Berros</title>
+<title>SARS-CoV-2 Buenos Aires strains DNA analysis | Juan Manuel Berros</title>
 <meta name="generator" content="Jekyll v3.9.0" />
-<meta property="og:title" content="Other Projects" />
+<meta property="og:title" content="SARS-CoV-2 Buenos Aires strains DNA analysis" />
 <meta name="author" content="Juan Manuel Berros" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description." />
 <meta property="og:description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description." />
-<link rel="canonical" href="http://localhost:4000/pages/other-projects/" />
-<meta property="og:url" content="http://localhost:4000/pages/other-projects/" />
+<link rel="canonical" href="http://localhost:4000/pages/sars-cov-2/" />
+<meta property="og:url" content="http://localhost:4000/pages/sars-cov-2/" />
 <meta property="og:site_name" content="Juan Manuel Berros" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Other Projects" />
+<meta property="twitter:title" content="SARS-CoV-2 Buenos Aires strains DNA analysis" />
 <script type="application/ld+json">
-{"description":"Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.","url":"http://localhost:4000/pages/other-projects/","headline":"Other Projects","@type":"WebPage","author":{"@type":"Person","name":"Juan Manuel Berros"},"@context":"https://schema.org"}</script>
+{"description":"Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.","url":"http://localhost:4000/pages/sars-cov-2/","headline":"SARS-CoV-2 Buenos Aires strains DNA analysis","@type":"WebPage","author":{"@type":"Person","name":"Juan Manuel Berros"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
     <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Juan Manuel Berros" />
@@ -79,7 +79,7 @@
 
   <br>
 
-  <a href="/pages/other-projects#sarscov2">
+  <a href="/pages/sars-cov-2">
     SARS-CoV-2 mutations analysis
   </a>
 
@@ -107,23 +107,38 @@
     <div id="main">
   <article>
     <header>
-      <h1 class="post-title">Other Projects</h1>
+      <h1 class="post-title">SARS-CoV-2 Buenos Aires strains DNA analysis</h1>
       <p class="post-meta"></p>
     </header>
 
     <section>
-      <h2 id="sarscov2">Coronavirus mutations in Buenos Aires strains</h2>
+      <p>The laboratory where I worked was part of <a href="http://pais.qb.fcen.uba.ar/" target="_blank" rel="noopener noreferrer">Proyecto-PAIS</a>, a country-wide effort in Argentina to sequence and analyse SARS-Cov-2 DNA samples. As member of one of the bioinformatics nodes, I developed some scripts for the visualization of results.</p>
 
-<p>The laboratory where I worked was part of <a href="http://pais.qb.fcen.uba.ar/" target="_blank" rel="noopener noreferrer">Proyecto-PAIS</a>, a country-wide effort in Argentina to sequence and analyse SARS-Cov-2 DNA samples.</p>
+<p>All plots displayed here were built with Python’s <code class="language-plaintext highlighter-rouge">matplotlib</code> and <code class="language-plaintext highlighter-rouge">seaborn</code>.</p>
 
-<p>All plots were done with Python’s <code class="language-plaintext highlighter-rouge">matplotlib</code>.</p>
+<h2 id="heatmap-of-dna-library-performance">Heatmap of DNA library performance</h2>
 
-<h3 id="types-of-mutations-per-lineagecluster">Types of mutations per lineage/cluster</h3>
+<p>In modern DNA sequencing technologies called “NGS”, the “depth” of sequencing is a key metric to understand the quality of the experiment. More depth means more data for a given DNA region, that
+allows to decide whether the presence or absence of mutations.</p>
+
+<p>This heatmap summarizes the sequencing depth in different regions of the SARS-CoV-2 (Coronavirus) genome using one particular technology. On the X axis the regions of the genome are represented. On the Y axis we see different groups of samples. Grey regions indicate that the depth is ok, yellow regions indicate a problematic (low-depth) region, and red/black regions indicate absence of data.</p>
+
+<p>Vertical regions of yellow or black/red patches are evidence of parts of the genome that are difficult to sequence across samples. Horizontal stretches of yellow/red/black patches show that one particular sample might have had low-quality DNA.</p>
+
+<div class="showcase-img">
+  <a href="/images/sars-cov-2/SARS-depth-heatmap.png">
+    <img src="/images/sars-cov-2/SARS-depth-heatmap.png">
+  </a>
+</div>
+
+<h2 id="types-of-mutations-per-lineagecluster">Types of mutations per lineage/cluster</h2>
 
 <p>Individual mutations in the first X axis with aminoacid change and position nomenclature. Lineages and clusters within lineages in the Y axis. Marginal histograms are also shown to summarize types of mutations and number of samples corresponding to each SARS-Cov-2 lineage/cluster.</p>
 
 <div class="showcase-img">
-  <img class="" src="/images/other-projects/SARS-mutations-per-cluster.png" width="100%">
+  <a href="/images/sars-cov-2/SARS-mutations-per-cluster.png">
+    <img src="/images/sars-cov-2/SARS-mutations-per-cluster.png">
+  </a>
 </div>
 
 <h3 id="number-of-samples-representing-each-mutationlineage">Number of samples representing each mutation/lineage</h3>
@@ -131,8 +146,11 @@
 <p>The number of samples is displayed for each individual combination of lineage and mutation type, while the marginal histograms display total samples per mutation (top) or per virus lineage (right).</p>
 
 <div class="showcase-img">
-  <img class="" src="/images/other-projects/SARS-mutations-per-region.png" width="100%">
+  <a href="/images/sars-cov-2/SARS-mutations-per-region.png">
+    <img src="/images/sars-cov-2/SARS-mutations-per-region.png">
+  </a>
 </div>
+
 
     </section>
 
@@ -203,5 +221,8 @@
 		<script src="/js/util.js"></script>
 		<!--[if lte IE 8]><script src="/js/ie/respond.min.js"></script><![endif]-->
 		<script src="/js/main.js"></script>
+
+    <script type="text/javascript" src="/js/lightbox.js"></script>
+    <link rel="stylesheet" href="/css/lightbox.css">
 	</body>
 </html>

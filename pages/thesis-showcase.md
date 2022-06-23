@@ -17,8 +17,12 @@ under different disorders and levels of mosaicism, which means different
 percentages of mutated cells in a sample.
 
 <div class="showcase-img">
-  <img src="/images/thesis-showcase/monosomy-densities.png" width="60%">
-  <img src="/images/thesis-showcase/trisomy-densities.png" width="60%">
+  <a href="/images/thesis-showcase/monosomy-densities.png">
+    <img src="/images/thesis-showcase/monosomy-densities.png" width="60%">
+  </a>
+  <a href="/images/thesis-showcase/trisomy-densities.png">
+    <img src="/images/thesis-showcase/trisomy-densities.png" width="60%">
+  </a>
 
   <div class="caption">
   Theoretical distribution of a statistic called BAF (B allele frequency)
@@ -36,8 +40,12 @@ We simulated genetic data for different levels mosaicism, based on the
 theoretical framework developed for the thesis.
 
 <div class="showcase-img">
-  <img src="/images/thesis-showcase/monosomy-simu.png" width="80%">
-  <img src="/images/thesis-showcase/trisomy-simu.png" width="80%">
+  <a href="/images/thesis-showcase/monosomy-simu.png">
+    <img src="/images/thesis-showcase/monosomy-simu.png" width="80%">
+  </a>
+  <a href="/images/thesis-showcase/trisomy-simu.png">
+    <img src="/images/thesis-showcase/trisomy-simu.png" width="80%">
+  </a>
 
   <div class="caption">
   Simulated BAF ("B" allele frequency) for different levels of mosaicism $m$ in
@@ -53,9 +61,13 @@ leveraging on a robust measure of dispersion called median absolute deviation
 (MAD).
 
 <div class="showcase-img">
-  <img src="/images/thesis-showcase/gMAD-performance.png" width="70%">
+  <a href="/images/thesis-showcase/gMAD-performance.png">
+    <img src="/images/thesis-showcase/gMAD-performance.png" width="70%">
+  </a>
   <br/>
-  <img src="/images/thesis-showcase/T3-empirical-percentiles.png" width="70%">
+  <a href="/images/thesis-showcase/T3-empirical-percentiles.png">
+    <img src="/images/thesis-showcase/T3-empirical-percentiles.png" width="70%">
+  </a>
 
   <div class="caption">
   Performance of a new statistic $T_3$ for the detection of genetic disorders
@@ -73,7 +85,9 @@ for genetic disorders that span few megabases in a chromosome (that means,
 mutations that span a relatively small region).
 
 <div class="showcase-img">
-  <img src="/images/thesis-showcase/windows-overlap.png" width="70%">
+  <a href="/images/thesis-showcase/windows-overlap.png">
+    <img src="/images/thesis-showcase/windows-overlap.png" width="70%">
+  </a>
 
   <div class="caption">
   In orange, a small region of a chromosome affected by a disorder called
@@ -89,7 +103,9 @@ We evaluated the performance of a new estimator of the level of mosaicism
 with simulated embryo samples.
 
 <div class="showcase-img">
-  <img src="/images/thesis-showcase/estimators-performance.png" width="80%">
+  <a href="/images/thesis-showcase/estimators-performance.png">
+    <img src="/images/thesis-showcase/estimators-performance.png" width="80%">
+  </a>
 
   <div class="caption">
     Performance of the estimator $\hat{m}$ under different values of $m$ in
@@ -104,7 +120,9 @@ We analyzed the BAF statistic under different levels of DNA mixture (or
 "contamination") between mother and embryo.
 
 <div class="showcase-img">
-  <img src="/images/thesis-showcase/mother-dna-contamination.png" width="70%">
+  <a href="/images/thesis-showcase/mother-dna-contamination.png">
+    <img src="/images/thesis-showcase/mother-dna-contamination.png" width="70%">
+  </a>
 
   <div class="caption">
   Patterns of BAF under different levels of mother-embryo DNA mixture.
@@ -119,7 +137,9 @@ with emphasis in the distribution of the size of the gaps with no data left by
 the panel.
 
 <div class="showcase-img">
-  <img src="/images/thesis-showcase/panel-snps.png" width="70%">
+  <a href="/images/thesis-showcase/panel-snps.png">
+    <img src="/images/thesis-showcase/panel-snps.png" width="70%">
+  </a>
 
   <div class="caption">
   Schematic design of a panel of genomic targets (top).
@@ -136,7 +156,9 @@ several pairs of diseases, like rheumatoid arthritis and multiple sclerosis,
 with negatively correlated scores. An example is given in the figure below.
 
 <div class="showcase-img">
-  <img src="/images/thesis-showcase/PRS-anticorrelation.png" width="80%">
+  <a href="/images/thesis-showcase/PRS-anticorrelation.png">
+    <img src="/images/thesis-showcase/PRS-anticorrelation.png" width="80%">
+  </a>
 
   <div class="caption">
     Rheumatoid Arthritis and Multiple Sclerosis have anticorrelated scores.
@@ -156,7 +178,9 @@ mutations. These captured-variance trajectories help quantify the degree of
 few mutations determine most of the risk.
 
 <div class="showcase-img">
-  <img src="/images/thesis-showcase/variance-trajectories.png" width="70%">
+  <a href="/images/thesis-showcase/variance-trajectories.png">
+    <img src="/images/thesis-showcase/variance-trajectories.png" width="70%">
+  </a>
 
   <div class="caption">
     Highlighted phenotypes in blue have pronounced captured-variance
@@ -170,7 +194,9 @@ We found a surprising "natural" grouping of autoimmune diseases based on the
 correlation between their polygenic scores.
 
 <div class="showcase-img">
-  <img src="/images/thesis-showcase/diseases-graph.png" width="50%">
+  <a href="/images/thesis-showcase/diseases-graph.png">
+    <img src="/images/thesis-showcase/diseases-graph.png" width="50%">
+  </a>
 
   <div class="caption">
   Directed graph of polygenic score correlations. The diseases naturally
@@ -187,7 +213,9 @@ embryos with low genetic score of one disease might have increased risk of
 a correlated disease.
 
 <div class="showcase-img">
-  <img src="/images/thesis-showcase/embryo-strategies.png" width="70%">
+  <a href="/images/thesis-showcase/embryo-strategies.png">
+    <img src="/images/thesis-showcase/embryo-strategies.png" width="70%">
+  </a>
 
   <div class="caption">
   The whole set of simulated embryos is shown in grey, with the embryos of
@@ -207,7 +235,9 @@ PRS-based embryo selection might be enough to produce unwanted new cases of
 some diseases.
 
 <div class="showcase-img">
-  <img src="/images/thesis-showcase/IRA-NNH.png" width="50%">
+  <a href="/images/thesis-showcase/IRA-NNH.png">
+    <img src="/images/thesis-showcase/IRA-NNH.png" width="50%">
+  </a>
 
   <div class="caption">
   Relation between increase in absolute risk (IRA) and number needed to harm

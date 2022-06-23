@@ -29,8 +29,12 @@ user customizations thorough an easily editable YAML (black textarea on the
 right).
 
 <div class="showcase-img">
-  <img class="with-border" src="/images/lab-app/edit-PNC.png" width="100%">
-  <img class="with-border" src="/images/lab-app/edit-NGA.png" width="100%">
+  <a href="/images/lab-app/edit-PNC.png">
+    <img class="with-border" src="/images/lab-app/edit-PNC.png" width="100%">
+  </a>
+  <a href="/images/lab-app/edit-NGA.png">
+    <img class="with-border" src="/images/lab-app/edit-NGA.png" width="100%">
+  </a>
 </div>
 
 ### Interactive generation of stats for different subsets of data
@@ -39,7 +43,9 @@ jQuery-powered highly interactive generation of stats for internal reporting
 of the lab performance on different clinics, methods, periods, etc.
 
 <div class="showcase-img">
-  <img class="with-border" src="/images/lab-app/stats.png" width="100%">
+  <a href="/images/lab-app/stats.png">
+    <img class="with-border" src="/images/lab-app/stats.png" width="100%">
+  </a>
 </div>
 
 ### Inventory of cases, samples, patients, DNA test results, etc.
@@ -48,25 +54,33 @@ Easy creation, edition, deletion of several types of entities related to the
 lab daily work.
 
 <div class="showcase-img">
-  <img class="with-border" src="/images/lab-app/lab-cases-index.png" width="100%">
+  <a href="/images/lab-app/lab-cases-index.png">
+    <img class="with-border" src="/images/lab-app/lab-cases-index.png" width="100%">
+  </a>
 </div>
 
 Inline edition of DNA library details, based on jQuery.
 
 <div class="showcase-img">
-  <img class="with-border" src="/images/lab-app/edit-library.png" width="100%">
+  <a href="/images/lab-app/edit-library.png">
+    <img class="with-border" src="/images/lab-app/edit-library.png" width="100%">
+  </a>
 </div>
 
 Billling index for sales people.
 
 <div class="showcase-img">
-  <img class="with-border" src="/images/lab-app/billing-index.png" width="100%">
+  <a href="/images/lab-app/billing-index.png">
+    <img class="with-border" src="/images/lab-app/billing-index.png" width="100%">
+  </a>
 </div>
 
 Bulk-edition of cases.
 
 <div class="showcase-img">
-  <img class="with-border" src="/images/lab-app/bulk-edit-cases.png" width="100%">
+  <a href="/images/lab-app/bulk-edit-cases.png">
+    <img class="with-border" src="/images/lab-app/bulk-edit-cases.png" width="100%">
+  </a>
 </div>
 
 ### Workflows for the creation of cases, patients and samples
@@ -74,13 +88,17 @@ Bulk-edition of cases.
 Beginning of a workflow with the creation of a new Case.
 
 <div class="showcase-img">
-  <img class="with-border" src="/images/lab-app/workflow-1-new-case.png" width="80%">
+  <a href="/images/lab-app/workflow-1-new-case.png">
+    <img class="with-border" src="/images/lab-app/workflow-1-new-case.png" width="80%">
+  </a>
 </div>
 
 Creation of a new patient as continuation of the workflow.
 
 <div class="showcase-img">
-  <img class="with-border" src="/images/lab-app/workflow-2-new-patient.png" width="80%">
+  <a href="/images/lab-app/workflow-2-new-patient.png">
+    <img class="with-border" src="/images/lab-app/workflow-2-new-patient.png" width="80%">
+  </a>
 </div>
 
 ### User edition for admins
@@ -88,5 +106,7 @@ Creation of a new patient as continuation of the workflow.
 Edition of diferential access for types of users.
 
 <div class="showcase-img">
-  <img class="with-border" src="/images/lab-app/users-edit.png" width="80%">
+  <a href="/images/lab-app/users-edit.png">
+    <img class="with-border" src="/images/lab-app/users-edit.png" width="80%">
+  </a>
 </div>
