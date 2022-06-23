@@ -10,7 +10,7 @@ All plots displayed here were built with Python's `matplotlib` and `seaborn`.
 ## Heatmap of DNA library performance
 
 In modern DNA sequencing technologies called "NGS", the "depth" of sequencing is a key metric to understand the quality of the experiment. More depth means more data for a given DNA region, that
-allows to decide whether the presence or absence of mutations.
+allows to make a call on the presence or absence of mutations.
 
 This heatmap summarizes the sequencing depth in different regions of the SARS-CoV-2 (Coronavirus) genome using one particular technology. On the X axis the regions of the genome are represented. On the Y axis we see different groups of samples. Grey regions indicate that the depth is ok, yellow regions indicate a problematic (low-depth) region, and red/black regions indicate absence of data.
 
