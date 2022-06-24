@@ -4,6 +4,10 @@
   img { max-width: 300px; }
 }
 
+.multiple-imgs {
+  display: flex;
+}
+
 .footer-links {
   display: flex;
   justify-content: flex-end;

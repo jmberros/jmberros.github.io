@@ -244,3 +244,14 @@ some diseases.
   (NNH) for several pairs of diseases found to be anticorrelated in the thesis.
   </div>
 </div>
+
+## Heatmap of number of datapoints and condidence of data
+
+The number of SNPs in each window of 5 Mb (megabases, a kind of genetic distance)
+are plotted, which can be thought of as the number of datapoints for a given test.
+
+<div class="showcase-img">
+  <a href="/images/thesis-showcase/heatmap-SNPs.png">
+    <img src="/images/thesis-showcase/heatmap-SNPs.png" width="70%">
+  </a>
+</div>
