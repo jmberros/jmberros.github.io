@@ -31,23 +31,24 @@ It implements a cache that can be based on MySQL, PostgreSQL or Redis.
 
 <div style="display: flex;">
   <div class="showcase-img">
-    <a href="/images/repos/qc-pipe.png">
-      <img src="/images/repos/qc-pipe.png">
+    <a href="/images/repos/anotala-code.png">
+      <img src="/images/repos/anotala-code.png">
     </a>
   </div>
-
   <div class="showcase-img">
-    <a href="/images/repos/vc-pipe.png">
-      <img src="/images/repos/vc-pipe.png">
+    <a href="/images/repos/anotala-code-2.png">
+      <img src="/images/repos/anotala-code-2.png">
     </a>
   </div>
-
   <div class="showcase-img">
-    <a href="/images/repos/ann-pipe.png">
-      <img src="/images/repos/ann-pipe.png">
+    <a href="/images/repos/anotala-code-3.png">
+      <img src="/images/repos/anotala-code-3.png">
     </a>
   </div>
 </div>
+
+More use cases in the repo's README.
+
 
 ## vcf to dataframe (DNA data format conversion)
 
@@ -60,6 +61,11 @@ It implements a cache that can be based on MySQL, PostgreSQL or Redis.
 to import any subset of samples in the file and it converts all INFO and GT
 fields to Python lists or dicts to ease the downstream parsing.
 
+<div class="showcase-img">
+<a href="/images/repos/vcf_to_dataframe.png">
+    <img src="/images/repos/vcf_to_dataframe.png">
+</a>
+</div>
 
 ## bed to tabix (1KGP genotypes downloader)
 
