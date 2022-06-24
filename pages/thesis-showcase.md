@@ -245,7 +245,7 @@ some diseases.
   </div>
 </div>
 
-## Heatmap of number of datapoints and condidence of data
+## Heatmap of number of datapoints per genomic region
 
 The number of SNPs in each window of 5 Mb (megabases, a kind of genetic distance)
 are plotted, which can be thought of as the number of datapoints for a given test.
