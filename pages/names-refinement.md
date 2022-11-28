@@ -3,7 +3,7 @@ title: "Cleanup of a database of 10M company names"
 layout: post
 ---
 
-During six months at **Grata Inc.**, I had the chance to devote myself to a gargantuan challenge: **cleaning up a database of roughly 10M company names**, mainly in English, but with other languages present as well. The company names table had multiple issues to be addressed:
+During my first six months at **Grata Inc.**, I had the chance to devote myself to a gargantuan challenge: **cleaning up a database of roughly 10M company names**, mainly in English, but with other languages present as well. The company names table had multiple issues to be addressed:
 
 - Names that were **too short**: 1 and 2-letter names, a complex mixture of wrong names and correct acronyms.
 - Names that were **too long**: a mixture of valid long names and names with a tagline or description to be removed.
