@@ -3,6 +3,16 @@ title: Some repositories & Code showcase
 layout: post
 ---
 
+## paginate pandas (Interactive pagination for pandas.DataFrames)
+
+<a href="https://github.com/jmberros/paginate_pandas" target="_blank">
+  https://github.com/jmberros/paginate_pandas
+</a>
+
+<strong>paginate pandas</strong> is a dead-simple interactive paginator for a pandas Series or DataFrames that leverages on ipywidgets and works beautifully on Jupyter Lab. It let's you easily browse through a possibly big (say, hundreds of thousands of rows) dataframe advancing page by page. It also let's you control the page size. If you deal with pandas a lot in Jupyter, this will change your quality of (developer) life.
+
+I developed it out of the necessity of exploring large tables from Jupyter.
+
 ## paip (DNA data analysis pipelines)
 
 <a href="https://github.com/biocodices/paip" target="_blank">
