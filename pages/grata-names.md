@@ -1,5 +1,5 @@
 ---
-title: "Cleanup of a database of 10M company names"
+title: Scoring and cleanup of 10m company names
 layout: post
 ---
 

@@ -28,18 +28,18 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 
     <!-- Begin Jekyll SEO tag v2.7.1 -->
-<title>Cleanup of a database of 10M company names | Uqbar Data Solutions ~ Juan Manuel Berros</title>
+<title>Scoring of 23m geocoding results | Uqbar Data Solutions ~ Juan Manuel Berros</title>
 <meta name="generator" content="Jekyll v3.9.0" />
-<meta property="og:title" content="Cleanup of a database of 10M company names" />
+<meta property="og:title" content="Scoring of 23m geocoding results" />
 <meta name="author" content="Juan Manuel Berros" />
 <meta property="og:locale" content="en_US" />
-<link rel="canonical" href="http://localhost:4000/pages/names-refinement/" />
-<meta property="og:url" content="http://localhost:4000/pages/names-refinement/" />
+<link rel="canonical" href="http://localhost:4000/pages/grata-locations/" />
+<meta property="og:url" content="http://localhost:4000/pages/grata-locations/" />
 <meta property="og:site_name" content="Uqbar Data Solutions ~ Juan Manuel Berros" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Cleanup of a database of 10M company names" />
+<meta property="twitter:title" content="Scoring of 23m geocoding results" />
 <script type="application/ld+json">
-{"url":"http://localhost:4000/pages/names-refinement/","headline":"Cleanup of a database of 10M company names","@type":"WebPage","author":{"@type":"Person","name":"Juan Manuel Berros"},"@context":"https://schema.org"}</script>
+{"url":"http://localhost:4000/pages/grata-locations/","headline":"Scoring of 23m geocoding results","@type":"WebPage","author":{"@type":"Person","name":"Juan Manuel Berros"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
     <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Uqbar Data Solutions ~ Juan Manuel Berros" />
@@ -65,39 +65,37 @@
   <div class="sidebar-links">
 
   <br>
-
   <h4>Portfolio:</h4>
-  <a href="/pages/names-refinement">
-    Cleanup of a database of 10M company names.
-  </a>
-  <br>
+
+  <a href="/pages/grata-locations">
+    Scoring of 23m geocoding results
+  </a><br>
+
+  <a href="/pages/grata-names">
+    Scoring and cleanup of 10m company names
+  </a><br>
 
   <a href="/pages/thesis-showcase">
     Thesis : Analysis of Embryo Genetic Scores
-  </a>
-  <br>
+  </a><br>
 
   <a href="/pages/lab-app">
     Web App for a Medical Genomics Lab
-  </a>
-  <br>
+  </a><br>
 
   <a href="/pages/sars-cov-2">
     SARS-CoV-2 mutations analysis
-  </a>
-  <br>
+  </a><br>
 
   <a href="/pages/repos">
     Repositories &amp; code
-  </a>
-  <br>
+  </a><br>
 
   <br>
 
   <a href="https://www.toptal.com/resume/juan-manuel-berros" target="_blank" rel="noopener noreferrer">
     Online resume at Toptal <img src="/images/toptal-icon.png" width="15px;">
-  </a>
-  <br>
+  </a><br>
 
 </div>
 
@@ -108,33 +106,41 @@
     <div id="main">
   <article>
     <header>
-      <h1 class="post-title">Cleanup of a database of 10M company names</h1>
+      <h1 class="post-title">Scoring of 23m geocoding results</h1>
       <p class="post-meta"></p>
     </header>
 
     <section>
-      <p>During my first six months at <strong>Grata Inc.</strong>, I had the chance to devote myself to a gargantuan challenge: <strong>cleaning up a database of roughly 10M company names</strong>, mainly in English, but with other languages present as well. The company names table had multiple issues to be addressed:</p>
+      <p>My last project at <strong>Grata Inc.</strong> involved the development of an <strong>automatic evaluation
+method</strong> to determine if <strong>geocoding results</strong> from external APIs (Geocode Earth,
+Mapbox) looked wrong and needed revision. Geocoding means that a raw address is
+converted into structured data of a location: the city, the state, the country, etc.</p>
 
-<ul>
-  <li>Names that were <strong>too short</strong>: 1 and 2-letter names, a complex mixture of wrong names and correct acronyms.</li>
-  <li>Names that were <strong>too long</strong>: a mixture of valid long names and names with a tagline or description to be removed.</li>
-  <li>Names with <strong>decorative characters</strong> of all sorts: emoji, unwanted “fancy” letters using math symbols, non-English characters and punctuation characters used decoratively.</li>
-  <li>Names with <strong>extraneous phrases</strong> of various flavors: “we are hiring”, “Foo Inc., formerly Bar LLC”, “acquired by X”, “powered by Y”, “a division of Z group”, taglines, marketing phrases, etc.</li>
-  <li>Wrongly scraped names that did not match the company at all.</li>
-  <li>
-<strong>Mojibake</strong>, aka the weird characters that appear after decoding text with the wrong character encoding.</li>
-</ul>
+<p>With this purpose, I designed a <strong>scoring method for US geocoding results</strong> that leveraged
+on on public data from the ZIP codes present in the raw addresses. A simple
+score where the correctness of the state and city weighed differently 
+was combined with the distance in kilometers between the ZIP data and the geocoding
+result, which included latitude and longitude. A couple of decision rules with
+<strong>thresholds tuned after analysis of a large sample</strong> proved effective to quickly decide if
+a given API result was trustworthy, highlighting a tail of bad results that those APIs
+gave for some corner cases of noisy addresses.</p>
 
-<p>With this purpose, a <strong>cohesive OOP solution</strong> was crafted from scratch and developed over the course of months: a <strong>Name Refiner class with a complementary name-utils module</strong>. The class and the utils module grew progressively as new fixes were addressed. Unit and integration <strong>testing</strong> for all features were <em>religiously</em> provided.</p>
+<div class="showcase-img">
+  <a href="/images/grata-locations/evaluation.png">
+    <img class="with-border" src="/images/grata-locations/evaluation.png" width="80%">
+  </a>
 
-<p>The core of the Refiner was a <strong>novel scoring method proposed for the company names</strong>. The score leveraged as much as possible on the available company data, e.g. the domain, the social media handles, and multiple (and sometimes different) names for the same company from different sources. The idea was to <strong>quantify an intuitive notion of what a “correct” company name was</strong> in this context, as a name that matched the domain and/or handles at least approximately. For this, string similarity measures had to be combined with loads of domain-specific logic so that the results matched what was oftentimes obvious to the human eye, but also full of hardly automatable subtleties.</p>
+  <div class="caption">
+  Sample of ~5K geocoding results evaluated levaraging on the ZIP code data found in the
+  input address. The color scale represents a score based on the number of fields
+  that are correct. Geocoding results farther from the ZIP reference tend to be wrong by
+  this scoring method. A threshold-based rule using the score and the distance from the
+  ZIP reference lets us easily highlight --and reject-- API results that are wrong
+  </div>
+</div>
 
-<p>Moreover, every fix was accompanied by a non-empty set of incorrectly “fixed” marginal cases, where the automation did not apply. Huge efforts were geared towards avoiding these negative side effects as much as possible. The hard-earned lesson was that in a set of millions of datapoints, every proposed solution has tradeoffs.</p>
-
-<p><strong>Performance needs</strong> were also addressed, since a massive backfill was run in production each time a fix was merged to main.</p>
-
-<p>Last but not least, the Name Refiner was carefully written and rewritten with code readability and maintainability in mind.</p>
-
+<p>This evaluation was performed on 23m existing records in the database, as well as
+being implemented as a new step in the evaluation of incoming geocoding results.</p>
 
     </section>
 

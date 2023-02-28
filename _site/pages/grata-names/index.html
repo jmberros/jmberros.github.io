@@ -28,18 +28,18 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 
     <!-- Begin Jekyll SEO tag v2.7.1 -->
-<title>Uqbar Data Solutions ~ Juan Manuel Berros</title>
+<title>Scoring and cleanup of 10m company names | Uqbar Data Solutions ~ Juan Manuel Berros</title>
 <meta name="generator" content="Jekyll v3.9.0" />
-<meta property="og:title" content="Uqbar Data Solutions ~ Juan Manuel Berros" />
+<meta property="og:title" content="Scoring and cleanup of 10m company names" />
 <meta name="author" content="Juan Manuel Berros" />
 <meta property="og:locale" content="en_US" />
-<link rel="canonical" href="http://localhost:4000/index_old/" />
-<meta property="og:url" content="http://localhost:4000/index_old/" />
+<link rel="canonical" href="http://localhost:4000/pages/grata-names/" />
+<meta property="og:url" content="http://localhost:4000/pages/grata-names/" />
 <meta property="og:site_name" content="Uqbar Data Solutions ~ Juan Manuel Berros" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Uqbar Data Solutions ~ Juan Manuel Berros" />
+<meta property="twitter:title" content="Scoring and cleanup of 10m company names" />
 <script type="application/ld+json">
-{"url":"http://localhost:4000/index_old/","headline":"Uqbar Data Solutions ~ Juan Manuel Berros","@type":"WebPage","author":{"@type":"Person","name":"Juan Manuel Berros"},"@context":"https://schema.org"}</script>
+{"url":"http://localhost:4000/pages/grata-names/","headline":"Scoring and cleanup of 10m company names","@type":"WebPage","author":{"@type":"Person","name":"Juan Manuel Berros"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
     <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Uqbar Data Solutions ~ Juan Manuel Berros" />
@@ -65,39 +65,37 @@
   <div class="sidebar-links">
 
   <br>
-
   <h4>Portfolio:</h4>
-  <a href="/pages/names-refinement">
-    Cleanup of a database of 10M company names.
-  </a>
-  <br>
+
+  <a href="/pages/grata-locations">
+    Scoring of 23m geocoding results
+  </a><br>
+
+  <a href="/pages/grata-names">
+    Scoring and cleanup of 10m company names
+  </a><br>
 
   <a href="/pages/thesis-showcase">
     Thesis : Analysis of Embryo Genetic Scores
-  </a>
-  <br>
+  </a><br>
 
   <a href="/pages/lab-app">
     Web App for a Medical Genomics Lab
-  </a>
-  <br>
+  </a><br>
 
   <a href="/pages/sars-cov-2">
     SARS-CoV-2 mutations analysis
-  </a>
-  <br>
+  </a><br>
 
   <a href="/pages/repos">
     Repositories &amp; code
-  </a>
-  <br>
+  </a><br>
 
   <br>
 
   <a href="https://www.toptal.com/resume/juan-manuel-berros" target="_blank" rel="noopener noreferrer">
     Online resume at Toptal <img src="/images/toptal-icon.png" width="15px;">
-  </a>
-  <br>
+  </a><br>
 
 </div>
 
@@ -106,16 +104,51 @@
 
 
     <div id="main">
+  <article>
+    <header>
+      <h1 class="post-title">Scoring and cleanup of 10m company names</h1>
+      <p class="post-meta"></p>
+    </header>
 
-  <section>
-    
-  </section>
+    <section>
+      <p>During my first six months at <strong>Grata Inc.</strong>, I had the chance to devote myself to a gargantuan challenge: <strong>cleaning up a database of roughly 10M company names</strong>, mainly in English, but with other languages present as well. The company names table had multiple issues to be addressed:</p>
 
-  <section>
-    <div class="row">
+<ul>
+  <li>Names that were <strong>too short</strong>: 1 and 2-letter names, a complex mixture of wrong names and correct acronyms.</li>
+  <li>Names that were <strong>too long</strong>: a mixture of valid long names and names with a tagline or description to be removed.</li>
+  <li>Names with <strong>decorative characters</strong> of all sorts: emoji, unwanted “fancy” letters using math symbols, non-English characters and punctuation characters used decoratively.</li>
+  <li>Names with <strong>extraneous phrases</strong> of various flavors: “we are hiring”, “Foo Inc., formerly Bar LLC”, “acquired by X”, “powered by Y”, “a division of Z group”, taglines, marketing phrases, etc.</li>
+  <li>Wrongly scraped names that did not match the company at all.</li>
+  <li>
+<strong>Mojibake</strong>, aka the weird characters that appear after decoding text with the wrong character encoding.</li>
+</ul>
+
+<p>With this purpose, a <strong>cohesive OOP solution</strong> was crafted from scratch and developed over the course of months: a <strong>Name Refiner class with a complementary name-utils module</strong>. The class and the utils module grew progressively as new fixes were addressed. Unit and integration <strong>testing</strong> for all features were <em>religiously</em> provided.</p>
+
+<p>The core of the Refiner was a <strong>novel scoring method proposed for the company names</strong>. The score leveraged as much as possible on the available company data, e.g. the domain, the social media handles, and multiple (and sometimes different) names for the same company from different sources. The idea was to <strong>quantify an intuitive notion of what a “correct” company name was</strong> in this context, as a name that matched the domain and/or handles at least approximately. For this, string similarity measures had to be combined with loads of domain-specific logic so that the results matched what was oftentimes obvious to the human eye, but also full of hardly automatable subtleties.</p>
+
+<p>Moreover, every fix was accompanied by a non-empty set of incorrectly “fixed” marginal cases, where the automation did not apply. Huge efforts were geared towards avoiding these negative side effects as much as possible. The hard-earned lesson was that in a set of millions of datapoints, every proposed solution has tradeoffs.</p>
+
+<p><strong>Performance needs</strong> were also addressed, since a massive backfill was run in production each time a fix was merged to main.</p>
+
+<p>Last but not least, the Name Refiner was carefully written and rewritten with code readability and maintainability in mind.</p>
+
+
+    </section>
+
+    <footer>
+      <div class="row">
       
-    </div>
-  </section>
+
+      
+      </div>
+    </footer>
+  </article>
+
+  <div class="ornament">
+  <img src="/images/ornament.png" width="40px">
+</div>
+
 </div>
 
 
