@@ -3,7 +3,7 @@ title: Complex Pipeline of Genetic Data Processing
 layout: post
 ---
 
-During my years in Biocodices lab, I built a
+In the Biocodices Medical Genetics laboratory, I built a
 **complex pipeline of genetic data processing**
  based on the Python's workflow framework
 <a href="https://luigi.readthedocs.io/en/stable/">Luigi</a> (a framework similar
@@ -42,3 +42,5 @@ The full pipeline is shown in the following graph for illustration purposes:
   </div>
 </div>
 
+The code is open and can be explored in the
+[Github repo](https://github.com/biocodices/paip/tree/master).

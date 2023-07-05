@@ -28,18 +28,18 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 
     <!-- Begin Jekyll SEO tag v2.7.1 -->
-<title>Complex Pipeline of Genetic Data Processing | Uqbar Data Solutions ~ Juan Manuel Berros</title>
+<title>Other Projects | Uqbar Data Solutions ~ Juan Manuel Berros</title>
 <meta name="generator" content="Jekyll v3.9.0" />
-<meta property="og:title" content="Complex Pipeline of Genetic Data Processing" />
+<meta property="og:title" content="Other Projects" />
 <meta name="author" content="Juan Manuel Berros" />
 <meta property="og:locale" content="en_US" />
-<link rel="canonical" href="http://localhost:4000/pages/paip/" />
-<meta property="og:url" content="http://localhost:4000/pages/paip/" />
+<link rel="canonical" href="http://localhost:4000/pages/other-projects/" />
+<meta property="og:url" content="http://localhost:4000/pages/other-projects/" />
 <meta property="og:site_name" content="Uqbar Data Solutions ~ Juan Manuel Berros" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Complex Pipeline of Genetic Data Processing" />
+<meta property="twitter:title" content="Other Projects" />
 <script type="application/ld+json">
-{"url":"http://localhost:4000/pages/paip/","headline":"Complex Pipeline of Genetic Data Processing","@type":"WebPage","author":{"@type":"Person","name":"Juan Manuel Berros"},"@context":"https://schema.org"}</script>
+{"url":"http://localhost:4000/pages/other-projects/","headline":"Other Projects","@type":"WebPage","author":{"@type":"Person","name":"Juan Manuel Berros"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
     <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Uqbar Data Solutions ~ Juan Manuel Berros" />
@@ -114,54 +114,51 @@
     <div id="main">
   <article>
     <header>
-      <h1 class="post-title">Complex Pipeline of Genetic Data Processing</h1>
+      <h1 class="post-title">Other Projects</h1>
       <p class="post-meta"></p>
     </header>
 
     <section>
-      <p>In the Biocodices Medical Genetics laboratory, I built a
-<strong>complex pipeline of genetic data processing</strong>
- based on the Python’s workflow framework
-<a href="https://luigi.readthedocs.io/en/stable/" target="_blank" rel="noopener noreferrer">Luigi</a> (a framework similar
-to Airflow, developed at Spotify).</p>
+      <h1 id="cargo-data-analysis">Cargo Data Analysis</h1>
 
-<p>The workflow started with the raw output of various DNA Sequencers
-(i.e. machines that read the sequence of DNA samples)
-and went through numerous standard bioinformatic quality assurance
-and filtering steps until a subset of medically relevant genetic
-mutations was kept for reporting.</p>
+<p>For this project, the client had a <strong>data challenge</strong> to quickly analyze a dataset of
+<strong>sites where cargo accumulates over time and is picked up according to different signals</strong>
+–a mixture of automatic pickups and scheduled pickups.</p>
 
-<p><strong>Multiple workflows</strong> were created around the main “mutations detection”
-workflow:</p>
+<p>We needed to visualize if there was room for improvement in the scheduling of
+cargo pickup times.</p>
 
-<ul>
-  <li>The main <strong>small mutations detection workflow</strong>, based on Illumina NGS data.</li>
-  <li>A specific workflow for data of a different sequencer called IonTorrent.</li>
-  <li>A <strong>side workflow of data quality analysis</strong> of partial results at various steps of the main pipeline.</li>
-  <li>An ever-growing <strong>“annotation” pipeline</strong> to provide additional information
-about each detected mutation, feeding from multiple medical and population genetics sources.</li>
-</ul>
+<p>The <strong>interactive visualization</strong> (done entierely with <code class="language-plaintext highlighter-rouge">matplotlib</code> and Jupyter
+IPywidgets, after some data analysis with <code class="language-plaintext highlighter-rouge">pandas</code>) shows that a lot of
+<strong>pickup times are either quite delayed or too early</strong>
+in contrast with the scheduled times. If a
+maximum cargo capacity of the site is plotted at 200K, we can see that almost all pickup
+schedules could be delayed a bit, until more cargo is accumulated.</p>
 
-<p><strong>Multiple filetypes</strong> were manipulated by the pipeline: JSON, PNG images,
-bioinformatic formats like VCF, BAM, FASTQ, and even the automatic generation of a software-specific script to generate genome “screenshots”.</p>
+<p>The information is evidently noisy, but a pattern emerges and there seems to be
+<strong>room for improvement of the pickup scheduling</strong>.</p>
 
-<p>Big efforts had to be done not to overcrowd the servers with intermediate files,
-while keeping a track of the intermediate steps for debugging and quality analysis.</p>
+<p>This challenge –both the analysis and the interactive prototpye–
+was completed in around three days of work:</p>
 
-<p>The full pipeline is shown in the following graph for illustration purposes:</p>
+<video width="90%" muted="" autoplay="" controls="">
+    <source src="/images/cargo/cargo-interactive-demo.webm" type="video/webm"></source>
+</video>
+
+<p>Another useful visualization was provided: a <strong>calendar heatmap</strong>,
+where we can see the number of measurements per day at each cargo site.
+A very irregular pattern of data availability emerges, with whole days when we
+have no new information:</p>
 
 <div class="showcase-img">
-  <a href="/images/paip/pipeline-chart.png">
-    <img class="with-border" src="/images/paip/pipeline-chart.png" width="80%">
+  <a href="/images/cargo/cargo-github-heatmap.png">
+    <img class="with-border" src="/images/cargo/cargo-github-heatmap.png" width="80%">
   </a>
 
   <div class="caption">
-    Full diagram of the pipeline of genetic data processing.
+     Number of measurements per day at Site number 1.
   </div>
 </div>
-
-<p>The code is open and can be explored in the
-<a href="https://github.com/biocodices/paip/tree/master" target="_blank" rel="noopener noreferrer">Github repo</a>.</p>
 
     </section>
 
