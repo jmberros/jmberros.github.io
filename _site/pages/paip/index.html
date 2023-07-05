@@ -28,18 +28,18 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 
     <!-- Begin Jekyll SEO tag v2.7.1 -->
-<title>Scoring and cleanup of 10m company names | Uqbar Data Solutions ~ Juan Manuel Berros</title>
+<title>Complex Pipeline of Genetic Data Processing | Uqbar Data Solutions ~ Juan Manuel Berros</title>
 <meta name="generator" content="Jekyll v3.9.0" />
-<meta property="og:title" content="Scoring and cleanup of 10m company names" />
+<meta property="og:title" content="Complex Pipeline of Genetic Data Processing" />
 <meta name="author" content="Juan Manuel Berros" />
 <meta property="og:locale" content="en_US" />
-<link rel="canonical" href="http://localhost:4000/pages/grata-names/" />
-<meta property="og:url" content="http://localhost:4000/pages/grata-names/" />
+<link rel="canonical" href="http://localhost:4000/pages/paip/" />
+<meta property="og:url" content="http://localhost:4000/pages/paip/" />
 <meta property="og:site_name" content="Uqbar Data Solutions ~ Juan Manuel Berros" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Scoring and cleanup of 10m company names" />
+<meta property="twitter:title" content="Complex Pipeline of Genetic Data Processing" />
 <script type="application/ld+json">
-{"url":"http://localhost:4000/pages/grata-names/","headline":"Scoring and cleanup of 10m company names","@type":"WebPage","author":{"@type":"Person","name":"Juan Manuel Berros"},"@context":"https://schema.org"}</script>
+{"url":"http://localhost:4000/pages/paip/","headline":"Complex Pipeline of Genetic Data Processing","@type":"WebPage","author":{"@type":"Person","name":"Juan Manuel Berros"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
     <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Uqbar Data Solutions ~ Juan Manuel Berros" />
@@ -110,32 +110,51 @@
     <div id="main">
   <article>
     <header>
-      <h1 class="post-title">Scoring and cleanup of 10m company names</h1>
+      <h1 class="post-title">Complex Pipeline of Genetic Data Processing</h1>
       <p class="post-meta"></p>
     </header>
 
     <section>
-      <p>During my first six months at <strong>Grata Inc.</strong>, I had the chance to devote myself to a gargantuan challenge: <strong>cleaning up a database of roughly 10M company names</strong>, mainly in English, but with other languages present as well. The company names table had multiple issues to be addressed:</p>
+      <p>During my years in Biocodices lab, I built a
+<strong>complex pipeline of genetic data processing</strong>
+ based on the Python’s workflow framework
+<a href="https://luigi.readthedocs.io/en/stable/" target="_blank" rel="noopener noreferrer">Luigi</a> (a framework similar
+to Airflow, developed at Spotify).</p>
+
+<p>The workflow started with the raw output of various DNA Sequencers
+(i.e. machines that read the sequence of DNA samples)
+and went through numerous standard bioinformatic quality assurance
+and filtering steps until a subset of medically relevant genetic
+mutations was kept for reporting.</p>
+
+<p><strong>Multiple workflows</strong> were created around the main “mutations detection”
+workflow:</p>
 
 <ul>
-  <li>Names that were <strong>too short</strong>: 1 and 2-letter names, a complex mixture of wrong names and correct acronyms.</li>
-  <li>Names that were <strong>too long</strong>: a mixture of valid long names and names with a tagline or description to be removed.</li>
-  <li>Names with <strong>decorative characters</strong> of all sorts: emoji, unwanted “fancy” letters using math symbols, non-English characters and punctuation characters used decoratively.</li>
-  <li>Names with <strong>extraneous phrases</strong> of various flavors: “we are hiring”, “Foo Inc., formerly Bar LLC”, “acquired by X”, “powered by Y”, “a division of Z group”, taglines, marketing phrases, etc.</li>
-  <li>Wrongly scraped names that did not match the company at all.</li>
-  <li>
-<strong>Mojibake</strong>, aka the weird characters that appear after decoding text with the wrong character encoding.</li>
+  <li>The main <strong>small mutations detection workflow</strong>, based on Illumina NGS data.</li>
+  <li>A specific workflow for data of a different sequencer called IonTorrent.</li>
+  <li>A <strong>side workflow of data quality analysis</strong> of partial results at various steps of the main pipeline.</li>
+  <li>An ever-growing <strong>“annotation” pipeline</strong> to provide additional information
+about each detected mutation, feeding from multiple medical and population genetics sources.</li>
 </ul>
 
-<p>With this purpose, a <strong>cohesive OOP solution</strong> was crafted from scratch and developed over the course of months: a <strong>Name Refiner class with a complementary name-utils module</strong>. The class and the utils module grew progressively as new fixes were addressed. Unit and integration <strong>testing</strong> for all features were <em>religiously</em> provided.</p>
+<p><strong>Multiple filetypes</strong> were manipulated by the pipeline: JSON, PNG images,
+bioinformatic formats like VCF, BAM, FASTQ, and even the automatic generation of a software-specific script to generate genome “screenshots”.</p>
 
-<p>The core of the Refiner was a <strong>novel scoring method proposed for the company names</strong>. The score leveraged as much as possible on the available company data, e.g. the domain, the social media handles, and multiple (and sometimes different) names for the same company from different sources. The idea was to <strong>quantify an intuitive notion of what a “correct” company name was</strong> in this context, as a name that matched the domain and/or handles at least approximately. For this, string similarity measures had to be combined with loads of domain-specific logic so that the results matched what was oftentimes obvious to the human eye, but also full of hardly automatable subtleties.</p>
+<p>Big efforts had to be done not to overcrowd the servers with intermediate files,
+while keeping a track of the intermediate steps for debugging and quality analysis.</p>
 
-<p>Moreover, every fix was accompanied by a non-empty set of incorrectly “fixed” marginal cases, where the automation did not apply. Huge efforts were geared towards avoiding these negative side effects as much as possible. The hard-earned lesson was that in a set of millions of datapoints, every proposed solution has tradeoffs.</p>
+<p>The full pipeline is shown in the following graph for illustration purposes:</p>
 
-<p><strong>Performance needs</strong> were also addressed, since a massive backfill was run in production each time a fix was merged to main.</p>
+<div class="showcase-img">
+  <a href="/images/paip/pipeline-chart.png">
+    <img class="with-border" src="/images/paip/pipeline-chart.png" width="80%">
+  </a>
 
-<p>Last but not least, the Name Refiner was carefully written and rewritten with code readability and maintainability in mind.</p>
+  <div class="caption">
+    Full diagram of the pipeline of genetic data processing.
+  </div>
+</div>
 
 
     </section>

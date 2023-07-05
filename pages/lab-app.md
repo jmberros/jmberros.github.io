@@ -1,11 +1,10 @@
 ---
-title: Web App for Medical Genomics Laboratory
+title: Interactive App for Genetic Reporting
 layout: post
 ---
 
 I developed from scratch and maintained during +6 years an internal web
-application based on **Ruby on Rails** for a medical genomics laboratory, while
-I completed my thesis on site.
+application based on **Ruby on Rails** for Biocodices, a medical genomics laboratory.
 
 The app serves as an **online inventory** of patients, clinics, doctors and DNA
 testing results, implements the
@@ -15,7 +14,7 @@ forms and **bulk-editions** of different types of data, as well as the generatio
 and **interactive edition of PDF reports** to communicate the results.
 
 This _in house_ software has saved the laboratory thousands of dollars in
-LIMS (Laboratory Information Management Software).
+proprietary LIMS (Laboratory Information Management Software).
 
 IMPORTANT NOTE: All the patient, doctor and clinic names in the screenshots
 have been <span class="warning-text">anonymised with fake names</span> from the Ruby gem
