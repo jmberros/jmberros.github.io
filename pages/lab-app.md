@@ -109,3 +109,19 @@ Edition of diferential access for types of users.
     <img class="with-border" src="/images/lab-app/users-edit.png" width="80%">
   </a>
 </div>
+
+### Complex design of a MySQL database
+
+A quite complex design of a MySQL database was needed for this app. Centered around
+the entity of "Cases" (typically, a case is one order of genetic testing from one patient),
+it grew to have multiple samples per case/patient, patients, medical doctors, and
+clinics associated to each case, laboratory equipment used for each case (the reactives
+of the DNA sequencing), and different types of reports.
+
+The UML diagram of the database is included as an illustration of this challenge:
+
+<div class="showcase-img">
+  <a href="/images/lab-app/database-UML.png">
+    <img class="with-border" src="/images/lab-app/database-UML.png" width="80%">
+  </a>
+</div>
