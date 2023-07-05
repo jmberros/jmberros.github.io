@@ -28,18 +28,18 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 
     <!-- Begin Jekyll SEO tag v2.7.1 -->
-<title>Other Projects | Uqbar Data Solutions ~ Juan Manuel Berros</title>
+<title>Data Modeling Projects | Uqbar Data Solutions ~ Juan Manuel Berros</title>
 <meta name="generator" content="Jekyll v3.9.0" />
-<meta property="og:title" content="Other Projects" />
+<meta property="og:title" content="Data Modeling Projects" />
 <meta name="author" content="Juan Manuel Berros" />
 <meta property="og:locale" content="en_US" />
 <link rel="canonical" href="http://localhost:4000/pages/other-projects/" />
 <meta property="og:url" content="http://localhost:4000/pages/other-projects/" />
 <meta property="og:site_name" content="Uqbar Data Solutions ~ Juan Manuel Berros" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Other Projects" />
+<meta property="twitter:title" content="Data Modeling Projects" />
 <script type="application/ld+json">
-{"url":"http://localhost:4000/pages/other-projects/","headline":"Other Projects","@type":"WebPage","author":{"@type":"Person","name":"Juan Manuel Berros"},"@context":"https://schema.org"}</script>
+{"url":"http://localhost:4000/pages/other-projects/","headline":"Data Modeling Projects","@type":"WebPage","author":{"@type":"Person","name":"Juan Manuel Berros"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
     <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Uqbar Data Solutions ~ Juan Manuel Berros" />
@@ -80,7 +80,7 @@
   </a><br>
 
   <a href="/pages/other-projects">
-    Other Projects
+    Data Modeling Projects
   </a><br>
 
   <a href="/pages/thesis-showcase">
@@ -114,12 +114,12 @@
     <div id="main">
   <article>
     <header>
-      <h1 class="post-title">Other Projects</h1>
+      <h1 class="post-title">Data Modeling Projects</h1>
       <p class="post-meta"></p>
     </header>
 
     <section>
-      <h1 id="cargo-data-analysis">Cargo Data Analysis</h1>
+      <h2 id="cargo-data-analysis---interactive-eda">Cargo Data Analysis - Interactive EDA</h2>
 
 <p>For this project, the client had a <strong>data challenge</strong> to quickly analyze a dataset of
 <strong>sites where cargo accumulates over time and is picked up according to different signals</strong>
@@ -145,19 +145,135 @@ was completed in around three days of work:</p>
     <source src="/images/cargo/cargo-interactive-demo.webm" type="video/webm"></source>
 </video>
 
-<p>Another useful visualization was provided: a <strong>calendar heatmap</strong>,
+<p><br>
+Another useful visualization was provided: a <strong>calendar heatmap</strong>,
 where we can see the number of measurements per day at each cargo site.
 A very irregular pattern of data availability emerges, with whole days when we
 have no new information:</p>
 
-<div class="showcase-img">
+<div class="showcase-img half-width">
   <a href="/images/cargo/cargo-github-heatmap.png">
-    <img class="with-border" src="/images/cargo/cargo-github-heatmap.png" width="80%">
+    <img class="with-border" src="/images/cargo/cargo-github-heatmap.png">
   </a>
 
   <div class="caption">
      Number of measurements per day at Site number 1.
   </div>
+</div>
+
+<h2 id="catch-a-user-based-on-their-web-visits">Catch a user based on their web visits</h2>
+
+<p>This data challenge was to model the behavior of one specific user (named Joe) based on
+his web visits: sites visited, time of visit, location, locale, OS, browser.</p>
+
+<p>Exploratory data analysis revealed mixed visits from Linux and Windows servers
+and from Chrome and Firefox browsers, while the locale was exclusively <code class="language-plaintext highlighter-rouge">ru-RU</code>.
+The locations varied across cities, so he seemed to be a nomadic user:</p>
+
+<p><a href="https://github.com/jmberros/jmberros.github.io/blob/main/images/catch-user/EDA-01__Sessions.ipynb" target="_blank" rel="noopener noreferrer">EDA 01: Web sessions notebook</a></p>
+
+<div class="showcase-img half-width">
+  <a href="/images/catch-user/OS-browser.png">
+    <img class="with-border" src="/images/catch-user/OS-browser.png">
+  </a>
+
+  <div class="caption">
+      Joe visits mainly from Windows/Ubuntu, Chrome/Firefox.
+  </div>
+</div>
+
+<div class="showcase-img">
+  <a href="/images/catch-user/locale.png">
+    <img class="with-border" src="/images/catch-user/locale.png">
+  </a>
+
+  <div class="caption">
+      Joe visits always with ru-RU locale.
+  </div>
+</div>
+
+<div class="showcase-img">
+  <a href="/images/catch-user/cities.png">
+    <img class="with-border" src="/images/catch-user/cities.png">
+  </a>
+
+  <div class="caption">
+      Joe visits from multiple cities across the world.
+  </div>
+</div>
+
+<p>Auxiliary exploratory analysis on the websites revealed a small
+set of sites favorite to this user.</p>
+
+<p><a href="https://github.com/jmberros/jmberros.github.io/blob/main/images/catch-user/EDA-02__Sites.ipynb" target="_blank" rel="noopener noreferrer">EDA 02: Websites visits notebook</a></p>
+
+<div class="showcase-img">
+  <a href="/images/catch-user/frequent-sites.png">
+    <img class="with-border" src="/images/catch-user/frequent-sites.png">
+  </a>
+
+  <div class="caption">
+     Joe most frequented sites.
+  </div>
+</div>
+
+<div class="showcase-img">
+  <a href="/images/catch-user/frequent-sites-2.png">
+    <img class="with-border" src="/images/catch-user/frequent-sites-2.png">
+  </a>
+
+  <div class="caption">
+     Joe most frequented sites that were *not frequent* for other users.
+  </div>
+</div>
+
+<p><a href="https://github.com/jmberros/jmberros.github.io/blob/main/images/catch-user/Model_Selection.ipynb" target="_blank" rel="noopener noreferrer">Model selection notebook</a></p>
+
+<p>We compared several models, mostly ensemble types: Bagging DTs and Random Forests with
+different parametrizations, and two types of logistic regressions. The clear winner was
+the Bagging DTs as implemented by <code class="language-plaintext highlighter-rouge">sci-kit learn</code>. We kept a Bagging DTs model with 100
+decision trees as the main hyperparameter.</p>
+
+<div class="showcase-img">
+  <a href="/images/catch-user/models.png">
+    <img class="with-border" src="/images/catch-user/models.png">
+  </a>
+
+  <div class="caption">
+     Comparison of the performance of several models, mostly ensembles of decision trees (DTs).
+  </div>
+</div>
+
+<p>A confusion matrix, together with precision, recall, and F1-score were provided for
+multiple probability thresholds <em>t</em>.</p>
+
+<div class="showcase-img">
+  <a href="/images/catch-user/confusion-matrices.png">
+    <img class="with-border" src="/images/catch-user/confusion-matrices.png">
+  </a>
+
+  <div class="caption">
+     Confusion matrix for the chosen threshold of probability to predict that a user is Joe.
+  </div>
+</div>
+
+<div class="showcase-img">
+  <a href="/images/catch-user/precision-vs-recall.png">
+    <img class="with-border" src="/images/catch-user/precision-vs-recall.png">
+  </a>
+
+  <div class="caption">
+    Several thresholds of probability and the resulting precision and recall values.
+  </div>
+</div>
+
+<p>A <strong>feature importance</strong> analysis revelaed that the locale and site of visit was the
+most informative piece of information, while the hour and some URLs came afterwards:</p>
+
+<div class="showcase-img">
+  <a href="/images/catch-user/feature-importance.png">
+    <img class="with-border" src="/images/catch-user/feature-importance.png">
+  </a>
 </div>
 
     </section>
