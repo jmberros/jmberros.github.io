@@ -4,6 +4,9 @@
 <loc>http://localhost:4000/pages/bio-for-toptal/</loc>
 </url>
 <url>
+<loc>http://localhost:4000/pages/data-modeling-projects/</loc>
+</url>
+<url>
 <loc>http://localhost:4000/pages/edu-work/</loc>
 </url>
 <url>
@@ -17,9 +20,6 @@
 </url>
 <url>
 <loc>http://localhost:4000/pages/lab-app/</loc>
-</url>
-<url>
-<loc>http://localhost:4000/pages/other-projects/</loc>
 </url>
 <url>
 <loc>http://localhost:4000/pages/paip/</loc>
@@ -36,5 +36,9 @@
 <url>
 <loc>http://localhost:4000/downloads/CV-Juan-Manuel-Berros.pdf</loc>
 <lastmod>2022-06-01T20:45:12-03:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/images/Juan-Manuel-Berros_CV-July-2023.pdf</loc>
+<lastmod>2023-07-05T16:34:09-03:00</lastmod>
 </url>
 </urlset>
