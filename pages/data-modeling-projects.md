@@ -26,11 +26,33 @@ The information is evidently noisy, but a pattern emerges and there seems to be
 This challenge --both the analysis and the interactive prototpye--
 was completed in around three days of work:
 
+<!--
 <video width="90%" muted autoplay controls>
     <source src="/images/cargo/cargo-interactive-demo.webm" type="video/webm">
 </video>
+-->
 
-<br/>
+<div class="showcase-img half-width">
+  <a href="/images/cargo/cargo-github-heatmap.png">
+    <img class="with-border" src="/images/cargo/cargo-analysis-1.png">
+  </a>
+</div>
+<div class="showcase-img half-width">
+  <a href="/images/cargo/cargo-github-heatmap.png">
+    <img class="with-border" src="/images/cargo/cargo-analysis-4.png">
+  </a>
+</div>
+<div class="showcase-img half-width">
+  <a href="/images/cargo/cargo-github-heatmap.png">
+    <img class="with-border" src="/images/cargo/cargo-analysis-6.png">
+  </a>
+</div>
+<div class="showcase-img half-width">
+  <a href="/images/cargo/cargo-github-heatmap.png">
+    <img class="with-border" src="/images/cargo/cargo-analysis-7.png">
+  </a>
+</div>
+
 Another useful visualization was provided: a **calendar heatmap**,
 where we can see the number of measurements per day at each cargo site.
 A very irregular pattern of data availability emerges, with whole days when we
