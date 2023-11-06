@@ -29,9 +29,8 @@ Another exploration involved a collection of tables from
 Labor Statistics, the Federal Reserver Economic Data, USPS addresses and address
 changes. Here, the solution involved interactively querying Snowflake to produce
 up-to-date plots with several parameters that the user could modify --i.e. normalized or
-unnormalized variables, seasonal adjustment, custom aggregation of industry types and
-geographic locations like arbitrary combinations of cities, metropolitan areas, or
-state
+unnormalized variables, seasonal adjustment, custom aggregation of industry types, and
+arbitrary combinations of cities, metropolitan areas, or states.
 
 
 <div class="showcase-img">
