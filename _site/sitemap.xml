@@ -31,6 +31,9 @@
 <loc>http://localhost:4000/pages/sars-cov-2/</loc>
 </url>
 <url>
+<loc>http://localhost:4000/pages/streamlit-insights/</loc>
+</url>
+<url>
 <loc>http://localhost:4000/pages/thesis-showcase/</loc>
 </url>
 <url>

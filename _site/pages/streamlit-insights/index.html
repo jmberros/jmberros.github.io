@@ -28,18 +28,18 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 
     <!-- Begin Jekyll SEO tag v2.7.1 -->
-<title>Some repositories &amp; Code showcase | Uqbar Data Solutions ~ Juan Manuel Berros</title>
+<title>Streamlit Data Explorations | Uqbar Data Solutions ~ Juan Manuel Berros</title>
 <meta name="generator" content="Jekyll v3.9.0" />
-<meta property="og:title" content="Some repositories &amp; Code showcase" />
+<meta property="og:title" content="Streamlit Data Explorations" />
 <meta name="author" content="Juan Manuel Berros" />
 <meta property="og:locale" content="en_US" />
-<link rel="canonical" href="http://localhost:4000/pages/repos/" />
-<meta property="og:url" content="http://localhost:4000/pages/repos/" />
+<link rel="canonical" href="http://localhost:4000/pages/streamlit-insights/" />
+<meta property="og:url" content="http://localhost:4000/pages/streamlit-insights/" />
 <meta property="og:site_name" content="Uqbar Data Solutions ~ Juan Manuel Berros" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Some repositories &amp; Code showcase" />
+<meta property="twitter:title" content="Streamlit Data Explorations" />
 <script type="application/ld+json">
-{"url":"http://localhost:4000/pages/repos/","headline":"Some repositories &amp; Code showcase","@type":"WebPage","author":{"@type":"Person","name":"Juan Manuel Berros"},"@context":"https://schema.org"}</script>
+{"url":"http://localhost:4000/pages/streamlit-insights/","headline":"Streamlit Data Explorations","@type":"WebPage","author":{"@type":"Person","name":"Juan Manuel Berros"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
     <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Uqbar Data Solutions ~ Juan Manuel Berros" />
@@ -120,100 +120,68 @@
     <div id="main">
   <article>
     <header>
-      <h1 class="post-title">Some repositories &amp; Code showcase</h1>
+      <h1 class="post-title">Streamlit Data Explorations</h1>
       <p class="post-meta"></p>
     </header>
 
     <section>
-      <h2 id="paginate-pandas-interactive-pagination-for-pandasdataframes">paginate pandas (Interactive pagination for pandas.DataFrames)</h2>
+      <p>This work for a client involved rapid prototyping of internal data exploration apps
+leveraging on a huge Snowflake database as resource and Streamlit as a tool to produce
+interactive visualizations.</p>
 
-<p><a href="https://github.com/jmberros/paginate_pandas" target="_blank" rel="noopener noreferrer">
-  https://github.com/jmberros/paginate_pandas
-</a></p>
-
-<p><strong>paginate pandas</strong> is a dead-simple interactive paginator for a pandas Series or DataFrames that leverages on ipywidgets and works beautifully on Jupyter Lab. It let’s you easily browse through a possibly big (say, hundreds of thousands of rows) dataframe advancing page by page. It also let’s you control the page size. If you deal with pandas a lot in Jupyter, this will change your quality of (developer) life.</p>
-
-<p>I developed it out of the necessity of exploring large tables from Jupyter.</p>
-
-<h2 id="paip-dna-data-analysis-pipelines">paip (DNA data analysis pipelines)</h2>
-
-<p><a href="https://github.com/biocodices/paip" target="_blank" rel="noopener noreferrer">
-  https://github.com/biocodices/paip
-</a></p>
-
-<p><strong>paip</strong> is a Luigi-based Python pipeline for the analysis of DNA
-sequencing NGS data. It has routines for quality control, variant calling and
-report generation, with a comprehensive unit test suite for pytest. I coded
-this in the span of 2 years as new needs arised in a medical genomics
-laboratory.</p>
-
-<h2 id="anotala-annotation-of-mutations">anotala (annotation of mutations)</h2>
-
-<p><a href="https://github.com/biocodices/anotala" target="_blank" rel="noopener noreferrer">
-  https://github.com/biocodices/anotala
-</a></p>
-
-<p><strong>anotala</strong> is an Python bioinformatics utilty that lets you
-annotate DNA mutations, i.e. add extra information to mutations found in a
-sample like aminoacid/protein affected, coding vs. non-coding and other region
-types, predicted strength of effect with different softwares, diseases
-known to be associated with the mutation.</p>
-
-<p>It implements a cache that can be based on MySQL, PostgreSQL or Redis.</p>
-
-<div style="display: flex;">
-  <div class="showcase-img">
-    <a href="/images/repos/anotala-code.png">
-      <img src="/images/repos/anotala-code.png">
-    </a>
-  </div>
-  <div class="showcase-img">
-    <a href="/images/repos/anotala-code-2.png">
-      <img src="/images/repos/anotala-code-2.png">
-    </a>
-  </div>
-  <div class="showcase-img">
-    <a href="/images/repos/anotala-code-3.png">
-      <img src="/images/repos/anotala-code-3.png">
-    </a>
-  </div>
-</div>
-
-<p>More use cases in the repo’s README.</p>
-
-<h2 id="vcf-to-dataframe-dna-data-format-conversion">vcf to dataframe (DNA data format conversion)</h2>
-
-<p><a href="https://github.com/biocodices/vcf_to_dataframe" target="_blank" rel="noopener noreferrer">
-  https://github.com/biocodices/vcf_to_dataframe
-</a></p>
-
-<p><strong>vcf_to_dataframe</strong> is a Python utilty to import a VCF file
-(a standard format to store DNA variants) as a pandas DataFrame. It allows
-to import any subset of samples in the file and it converts all INFO and GT
-fields to Python lists or dicts to ease the downstream parsing.</p>
+<p>One exploration involved diving deep into a dataset of socioeconomic, demographics,
+personal, and consumer information (<a href="https://batchdocs.infutor.com/" target="_blank" rel="noopener noreferrer">Infutor</a>). The
+Snowflake table had 250m rows, so random samples were extracted and processed in real
+time, from user interaction, with the help of <code class="language-plaintext highlighter-rouge">polars</code>, a dataframe library that can be
+many times faster than <code class="language-plaintext highlighter-rouge">pandas</code>.</p>
 
 <div class="showcase-img">
-<a href="/images/repos/vcf_to_dataframe.png">
-    <img src="/images/repos/vcf_to_dataframe.png">
-</a>
-</div>
-
-<h2 id="bed-to-tabix-1kgp-genotypes-downloader">bed to tabix (1KGP genotypes downloader)</h2>
-
-<p><a href="https://github.com/biocodices/bed_to_tabix" target="_blank" rel="noopener noreferrer">
-  https://github.com/biocodices/bed_to_tabix
-</a></p>
-
-<p><strong>bed_to-tabix</strong> is a friendly Python CLI utility that will
-download the genotypes of 2,504 individuals of the 1,000 Genomes Project (1KGP)
-for the genome regions define in an input BED file. The script deals with
-chromosome separate downloading and merging, and with temporary files clenaup.</p>
-
-<div class="showcase-img">
-  <a href="/images/repos/bed_to_tabix.png">
-    <img src="/images/repos/bed_to_tabix.png">
+  <a href="/images/sfra/infutor-insights.png">
+    <img class="with-border" src="/images/sfra/infutor-insights.png" width="80%">
   </a>
+
+  <div class="caption">
+  Fast interactive exploration of the top consumer interests of any combination
+  of demographics and geographic categories.
+  </div>
 </div>
+
+<p>Another exploration involved a collection of tables from
+<a href="https://www.cybersyn.com/" target="_blank" rel="noopener noreferrer">Cybersyn</a>, comprising multiple timeseries from the Bureau of
+Labor Statistics, the Federal Reserver Economic Data, USPS addresses and address
+changes. Here, the solution involved interactively querying Snowflake to produce
+up-to-date plots with several parameters that the user could modify –i.e. normalized or
+unnormalized variables, seasonal adjustment, custom aggregation of industry types and
+geographic locations like arbitrary combinations of cities, metropolitan areas, or
+state</p>
+
+<div class="showcase-img">
+  <a href="/images/sfra/page-01.png">
+    <img class="with-border" src="/images/sfra/page-01.png" width="80%">
+  </a>
+  <div class="caption">
+  Timeseries of normalized employment for a selection of industries.
+  </div>
+</div>
+<div class="showcase-img">
+  <a href="/images/sfra/page-03.png">
+    <img class="with-border" src="/images/sfra/page-03.png" width="80%">
+  </a>
+  <div class="caption">
+  Stacked barplot of selected industries and their share of non-farm payrolls over
+  the years.
+  </div>
+</div>
+<div class="showcase-img">
+  <a href="/images/sfra/page-04.png">
+    <img class="with-border" src="/images/sfra/page-04.png" width="80%">
+  </a>
+  <div class="caption">
+  Timeseries of net migration in a chosen city with the detail of inbound and outbound
+  address  changes.
+  </div>
+</div>
+
 
     </section>
 
